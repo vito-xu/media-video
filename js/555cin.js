@@ -283,6 +283,7 @@ const spider = {
 
     const key = typeId;
     let url = buildShowUrl(typeId, page, ext);
+    console.log('[555cin] category ' + url);
     // 第 2 页起优先用页内反推出的模板（自校正，防止路由段位记错）
     if (page > 1 && this.pageTpl[key]) url = HOST + this.pageTpl[key].replace('{page}', String(page));
 

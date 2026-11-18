@@ -269,6 +269,7 @@ const spider = {
     if (page > 0) qs.push('page=' + page);
 
     const url = HOST + channel.path + (qs.length ? '?' + qs.join('&') : '');
+    console.log('[huahaiyy] category ' + url);
     const html = request(url);
     const list = parseList(html);
 
