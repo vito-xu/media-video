@@ -20,8 +20,11 @@ const CLASSES = [
   ['4645', '短视频'],
 ];
 
-function request(url) {
-  const res = globalThis._http(url, { headers: HEADERS, timeout: 15000 });
+function request(url, referer) {
+  const items = {};
+  for (const k in HEADERS) items[k] = HEADERS[k];
+  if (referer) items.Referer = referer;
+  const res = globalThis._http(url, { headers: items, timeout: 15000 });
   return res && res.content ? res.content : '';
 }
 
@@ -109,7 +112,8 @@ const spider = {
       html = request(categoryUrl(tid));
       pagecount = parsePageCount(html);
     } else {
-      const jsonp = request(`${APP}?a=catlist_page&catid=${encodeURIComponent(tid)}&ord=2&page_num=${page - 1}&callback=cb`);
+      // cmsapp 接口校验 Referer（2026-11 实测，无 Referer 返回空）
+      const jsonp = request(`${APP}?a=catlist_page&catid=${encodeURIComponent(tid)}&ord=2&page_num=${page - 1}&callback=cb`, `${HOST}/`);
       html = parseJsonpHtml(jsonp);
     }
     return JSON.stringify({
