@@ -88,5 +88,31 @@
       "quickSearch": 1,
       "filterable": 1
     }
+  ],
+  "ads": [
+    "doubleclick.net",
+    "googlesyndication.com",
+    "googleadservices.com",
+    "adservice.google",
+    "adnxs.com",
+    "adsrvr.org",
+    "criteo.com",
+    "taboola.com",
+    "outbrain.com",
+    "tanx.com",
+    "alimama.com",
+    "cpro.baidu.com",
+    "pos.baidu.com",
+    "gdt.qq.com",
+    "e.qq.com",
+    "guanggao",
+    "advert",
+    "adserver",
+    "adpush",
+    "popads",
+    "popcash",
+    "hm.baidu.com",
+    "cnzz.com",
+    "51.la"
   ]
 }
