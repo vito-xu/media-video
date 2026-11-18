@@ -242,8 +242,7 @@ const spider = {
       }
     }
     if (types.length === 0) for (let i = 0; i < CHANNELS.length; i++) types.push({ type_id: CHANNELS[i].type_id, type_name: CHANNELS[i].type_name });
-    // 理论片（成人板块）不上 tab；想加回来删掉这行即可
-    for (let i = types.length - 1; i >= 0; i--) if (types[i].type_name.indexOf('理论') !== -1) types.splice(i, 1);
+    // 原则：爬什么给什么，不做内容过滤（站点全部频道原样呈现）
 
     // 每个频道抓一次 show 页：拾取子分类 + 筛选行
     const classes = [];
