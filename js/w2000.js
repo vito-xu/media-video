@@ -311,6 +311,13 @@ const spider = {
     let remarks = '';
     const picText = html.match(/stui-content__thumb[\s\S]{0,900}?pic-text[^>]*>([^<]*)</);
     if (picText) remarks = text(picText[1]);
+    // 详情页有「年份：2025」数据行，拼进角标（列表卡片无年份数据）
+    const yearLine = html.match(/年份：\s*<\/span>([\s\S]{0,120}?)<\/(?:span|p)>/) ||
+                     html.match(/年份：\s*(\d{4})/);
+    if (yearLine) {
+      const y = text(yearLine[1]).match(/\d{4}/);
+      if (y) remarks = [y[0], remarks].filter(Boolean).join('·');
+    }
 
     const lines = buildLines(html);
     const from = lines.map((l) => l.name).join('$$$');

@@ -123,6 +123,15 @@ function parseList(html) {
     const noteMatch = block.match(/top-2 right-2[\s\S]{0,200}?>\s*([^<]{1,12}?)\s*</);
     if (noteMatch) remarks = text(noteMatch[1]);
 
+    // 卡片下方有年份 span（2026），拼进角标：2026·更新至12集
+    // 注意卡片含 hover 蒙层较长（~1700 字符），窗口要给足，并用下一张卡锚点截断防串卡
+    const tail = html.slice(m.index, m.index + m[0].length + 2600);
+    const nextCard = tail.slice(1).search(/<a href="\/(?:movie|tv)\//) + 1;
+    const look = nextCard > 0 ? tail.slice(0, nextCard) : tail;
+    const yearMatch = look.match(/<span>\s*(\d{4})\s*<\/span>/);
+    const year = yearMatch ? yearMatch[1] : '';
+    remarks = [year, remarks].filter(Boolean).join('·');
+
     list.push({ vod_id: vodId, vod_name: vodName, vod_pic: pic, vod_remarks: remarks });
   }
   return list;
@@ -307,12 +316,17 @@ const spider = {
     if (ogDesc) desc = decode(ogDesc[1]);
 
     const lines = buildLines(html, pageUrl);
-    let remarks = '';
-    if (lines.length > 0 && lines[0].eps.length > 1) remarks = lines[0].eps.length + '集';
+    let year = '';
+    const yearMatch = html.match(/[(（]\s*(\d{4})\s*[)）]/) || html.match(/"year":\s*(\d{4})/);
+    if (yearMatch) year = yearMatch[1];
+
+    let remarks = year;
+    if (lines.length > 0 && lines[0].eps.length > 1) remarks = [year, lines[0].eps.length + '集'].filter(Boolean).join('·');
     else {
       const q = html.match(/(\d{3,4}[pP]|4K)/);
-      if (q) remarks = q[1];
+      if (q) remarks = [year, q[1]].filter(Boolean).join('·');
     }
+    if (!remarks) remarks = year;
     const from = lines.map((l) => l.name).join('$$$');
     const play = lines.map((l) => l.eps.map((e) => e.name + '$' + e.url).join('#')).join('$$$');
 

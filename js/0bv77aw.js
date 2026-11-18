@@ -205,7 +205,7 @@ const spider = {
         vod_id: String(v.vodId),
         vod_name: v.vodName || '',
         vod_pic: v.vodPic || '',
-        vod_remarks: v.vodRemarks || (v.vodSerial ? '更新至' + v.vodSerial + '集' : ''),
+        vod_remarks: [String(v.vodPubdate || '').slice(0, 4), v.vodRemarks || (v.vodSerial ? '更新至' + v.vodSerial + '集' : '')].filter(Boolean).join('·'),
       });
     }
     return JSON.stringify({
@@ -235,8 +235,8 @@ const spider = {
         vod_name: v.vodName || '',
         vod_pic: v.vodPic || '',
         vod_content: stripHtml(v.vodContent),
-        vod_remarks: v.vodRemarks || '',
-        vod_year: v.vodYear || '',
+        vod_remarks: [String(v.vodPubdate || '').slice(0, 4), v.vodRemarks || ''].filter(Boolean).join('·'),
+        vod_year: v.vodYear || String(v.vodPubdate || '').slice(0, 4) || '',
         vod_area: v.vodArea || '',
         vod_actor: v.vodActor || '',
         vod_director: v.vodDirector || '',
