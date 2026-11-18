@@ -12,7 +12,7 @@
  * 命令:
  *   home                      测试 home()
  *   homeVod                   测试 homeVod()
- *   category <tid> <pg>       测试 category(tid, pg)
+ *   category <tid> <pg> [extendJSON]  测试 category(tid,pg,filter,extend)
  *   detail <id>               测试 detail(id)
  *   search <keyword>          测试(keyword)
  *   play <flag> <id>          测试 play(flag, id)
@@ -77,7 +77,7 @@ function makeHttp(opts) {
     }
 
     // 实网模式：execSync curl
-    let cmd = `curl --compressed -s -m ${Math.ceil(timeout / 1000)} -w '\\n__STATUS__%{http_code}'`;
+    let cmd = `curl -s -m ${Math.ceil(timeout / 1000)} -w '\\n__STATUS__%{http_code}'`;
     if (opts.proxy) cmd += ` -x '${opts.proxy}'`;
     for (const [k, v] of Object.entries(headers)) {
       cmd += ` -H '${k}: ${String(v).replace(/'/g, "'\\''")}'`;
@@ -132,6 +132,13 @@ function showResult(cmd, result, opts) {
   }
   if (d.class) {
     console.log(`分类 ${d.class.length} 个: ${d.class.map(c => c.type_name || c.name).join(' / ')}`);
+    if (d.filters) {
+      const parts = [];
+      for (const tid of Object.keys(d.filters)) {
+        parts.push(`${tid}: ` + d.filters[tid].map(f => `${f.key}/${f.name}(${(f.value || []).length - 1})`).join(' '));
+      }
+      console.log('筛选 ' + parts.length + ' 类 → ' + parts.join(' | '));
+    } else console.log('⚠️  无 filters —— App 不会显示筛选按钮（站点有筛选就该返回）');
   }
   if (Array.isArray(d.list)) {
     const n = d.list.length;
@@ -189,7 +196,12 @@ function main() {
       switch (c) {
         case 'home': r = spider.home(); break;
         case 'homeVod': r = spider.homeVod(); break;
-        case 'category': r = spider.category(args[0], args[1]); break;
+        case 'category': {
+          let ext = null;
+          if (args[2]) { try { ext = JSON.parse(args[2]); } catch (e) { throw new Error('extend 不是合法 JSON: ' + args[2]); } }
+          r = spider.category(args[0], args[1], true, ext);
+          break;
+        }
         case 'detail': r = spider.detail(args[0]); break;
         case 'search': r = spider.search(args[0]); break;
         case 'play': r = spider.play(args[0], args[1]); break;

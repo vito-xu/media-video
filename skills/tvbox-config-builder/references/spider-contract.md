@@ -29,9 +29,9 @@
 | JS 方法 | 触发时机 | 返回要点 |
 |---|---|---|
 | `init()` | 实例创建后一次 | 可空；`ext` 参数经 site.ext 传入 |
-| `home()` | 进首页 | `{class:[{type_id,type_name}]}`，可选 `filters` |
+| `home()` | 进首页 | `{class:[...], filters:{type_id:[Filter]}}`——站点有筛选项时 `filters` 必须下发，否则 App 不显示筛选按钮 |
 | `homeVod()` | 首页推荐 | `{list:[Vod]}` |
-| `category(tid,pg)` | 点分类/翻页 | `{page,pagecount,limit,total,list:[Vod]}` |
+| `category(tid,pg,filter,extend)` | 点分类/翻页/选筛选 | 签名必须带满 4 参；`extend` 是筛选选中值（key=filters.key）；返回 `{page,pagecount,limit,total,list:[Vod]}` |
 | `detail(id)` | 点影片卡片 | `{list:[Vod]}`，Vod 含 `vod_play_from`+`vod_play_url` |
 | `search(key)` | 搜索 | `{list:[Vod]}` |
 | `play(flag,id)` | 选集数播放 | `{parse:0,url,header}` |
@@ -102,7 +102,27 @@ api:    ./js/xxx.js
 
 推论：js 爬虫文件必须与 config.json 同仓库、保持相对位置；改目录结构会连带改 config 内路径。
 
-## 9. 高级能力（按需）
+## 9. 筛选（filters）——站点有筛选就必须实现
+
+App 侧机制（FongMi/TV 实测）：
+- `home()` 结果里的 `filters` 是 **按 type_id 键控的 map**：`{"1":[Filter...],"2":[...]}`；漏键 = 该分类没有筛选按钮
+- Filter 结构：`{key, name, init, value:[{n,v}]}`；`key` = 站点 query 参数名（原样回传），`n/v` = 显示名/参数值
+- **`init` 必须是空串 `""`**（代表"全部"）：App 的 `getExtend(true)` 只下发 `init != null` 的组，null 会丢初始值
+- 筛选按钮（FAB）只在 `filters` 非空时显示；用户选中值后 App 立即重调 `category(tid, pg, true, extend)`
+- `value` 里放一个 `{n:'全部', v:''}` 作为复位项，`init:''` 时它会高亮
+
+实现套路（两选一或合并）：
+1. **静态原样表**：逐频道 dump 筛选链接取值（准确，但站点改版会过期）；不同频道取值不同时必须分开
+2. **实时拾取**：从能一次抓到的页面（如首页侧栏）按频道解析筛选链接；缺点常只列部分取值
+3. 实战推荐：`静态表 ∪ 拾取结果` 合并去重——覆盖全 + 新增取值免改代码
+
+常见坑：
+- 各频道类型/地区表不同（花海影院：电影 24 ≠ 短剧 25；地区 24 vs 短剧 17），照抄会出空列表
+- 站点 page 基制：App 恒传 pg=1 起，`?page=0` 基站点（如花海影院）要 `-1` 再拼
+- 站点部分筛选链接本身返回空（数据稀疏），与站点行为一致即可，别当 bug 修
+- 排除类（已观看/不想看）依赖登录态，TVBox 无账号，放弃
+
+## 10. 高级能力（按需）
 
 - `proxy://?do=js` 本地代理 URL：播放 URL 可指向 App 内嵌 NanoHTTPD（9978 起），由 `proxy()` 方法中转（用于加签/换 header）
 - `vod_tag:"folder"`：文件夹型分类（点进去再调 category）

@@ -23,6 +23,37 @@ const CLASSES = [
   // ['分类2', '分类2'],
 ];
 
+// TODO: 站点有筛选项就必须实现（App 的筛选按钮只在 filters 非空时出现）。
+// 每组: { key: URL参数名, name: 显示名, init: '默认值(必须是空串占"全部"或首值)', value: [{n,v}] }
+// key 会被 App 原样放进 extend 传回 category()，直接对应站点 query 参数名。
+const FILTER_GROUPS = [
+  // { key: 'class', name: '类型', init: '', value: [{ n: '全部', v: '' }, { n: '剧情', v: '剧情' }] },
+  // { key: 'area',  name: '地区', init: '', value: [{ n: '全部', v: '' }, { n: '大陆', v: '大陆' }] },
+  // { key: 'year',  name: '年份', init: '', value: [{ n: '全部', v: '' }, { n: '2024', v: '2024' }] },
+];
+
+/**
+ * 组装 filters（按 type_id 键控；各频道取值不同时按 channel 生成，
+ * 可用「静态原样表 ∪ 首页侧栏实时拾取」合并，站点新增取值免改代码）。
+ */
+function buildFilters(channel) {
+  const groups = FILTER_GROUPS.slice();
+  const filters = {};
+  for (const c of CLASSES) filters[c[0]] = groups;
+  return filters;
+}
+
+/** extend(选中的筛选值) + page 拼成 query 串；空值一律跳过 */
+function buildQuery(extend, page, pageParam) {
+  const qs = [];
+  const e = extend || {};
+  for (const g of FILTER_GROUPS) {
+    if (e[g.key]) qs.push(g.key + '=' + encodeURIComponent(e[g.key]));
+  }
+  if (page > 1) qs.push((pageParam || 'page') + '=' + page);
+  return qs.join('&');
+}
+
 // ==================== 基础工具 ====================
 function headers(referer) {
   const items = {};
@@ -222,6 +253,7 @@ const spider = {
   home() {
     return JSON.stringify({
       class: CLASSES.map((c) => ({ type_id: c[0], type_name: c[1] })),
+      filters: buildFilters(),
     });
   },
 
@@ -229,12 +261,15 @@ const spider = {
     return this.category(CLASSES[0][0], '1');
   },
 
-  category(tid, pg) {
+  // 注意签名必须是 4 个参数：extend 即 App 筛选面板传回的选中值（key=FILTER_GROUPS.key）
+  category(tid, pg, filter, extend) {
     const page = Number(pg || 1);
-    // TODO: 按站点分页规则拼 URL（注意 filter 参数下翻页用 &page=）
+    // TODO: 按站点分页规则拼 URL；翻页参数与筛选参数用 & 组合
+    //       ⚠️ 确认站点 page 是 0 基还是 1 基（传给站点前先换算）
     let url = HOST + '/list';
     if (tid && tid !== '全部') url += '?filter=' + encodeURIComponent(tid);
-    url += (url.indexOf('?') === -1 ? '?' : '&') + 'page=' + page;
+    const qs = buildQuery(extend, page);
+    if (qs) url += (url.indexOf('?') === -1 ? '?' : '&') + qs;
 
     const html = request(url);
     const list = parseList(html);

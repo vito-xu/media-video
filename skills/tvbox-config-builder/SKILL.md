@@ -54,17 +54,31 @@ API 要签名时（返回"应用签名不可为空"等）：用 playwright 拦 *
 4. `<source>`/`<video>` 内联 src
 5. `eval(function(p,a,c,k,e,d){...})` packed JS → 用 assets/spider_template.js 内置的修复版 unpacker
 
-### 1.5 输出分析结论
-写一段简短结论：数据源（API / SSR / 客户端）、列表选择器、详情提取点、分页方式、反爬等级、所需基建。后续实现与测试全部以此为契约。
+### 1.5 筛选项盘点（站点有筛选就必须接）
+把每个列表页的筛选区 dump 下来，逐组记录成契约，缺失这一步 = App 没有筛选按钮：
+
+| 记录项 | 示例 |
+|---|---|
+| 分组与参数名 | 分类=`class`、地区=`area`、年份=`year`、排序=`sort_field` |
+| 取值全集 | **逐频道核对**——常见坑：各频道类型表不同；侧栏可能只列部分（如 21/24）；某频道值更少（短剧地区 17 个） |
+| 值形态 | 中文原文（需 encodeURIComponent）、数字 id、枚举码 |
+| 翻页基制 | `?page=N` 是 0 基还是 1 基；带筛选时翻页参数怎么组合 |
+| 特殊组 | 「高级/排除」类：判断是否依赖登录态（已观看/不想看之类 TVBox 直接放弃） |
+
+取值表过长的处理：静态原样表（准确但会过期）∪ 能一次抓到的页面实时拾取（如首页侧栏），两者合并。
+
+### 1.6 输出分析结论
+写一段简短结论：数据源（API / SSR / 客户端）、列表选择器、详情提取点、分页方式、筛选组契约、反爬等级、所需基建。后续实现与测试全部以此为契约。
 
 ## Phase 2 — 爬虫实现
 
 从 `assets/spider_template.js` 拷贝骨架，按分析结论填空。骨架已内置：`request()`（CF 挑战页检测 + 可选 PROXY）、修复版 `decode()`（HTML 实体）、修复版 `decodeEval()` + `packerKey()`（radix ≤ 62）。
 
 契约速查（完整版见 references/spider-contract.md）：
-- 所有方法返回 **JSON 字符串**；`home` 回 `{class:[{type_id,type_name}]}`
+- 所有方法返回 **JSON 字符串**；`home` 回 `{class:[{type_id,type_name}], filters:{type_id:[Filter]}}`
+- **站点有筛选项就必须下发 `filters`**（App 的筛选按钮只在 filters 非空时出现）；结构见 1.5 与 references
 - 列表项：`vod_id`（详情回传的唯一键，用稳定值）、`vod_name`、`vod_pic`
-- `category(tid,pg)`：tid 通常直接映射 URL 参数或路径
+- `category(tid,pg,filter,extend)`：**签名必须带满 4 个参数**；extend 的 key 即 filters 里定义的 key，直接映射站点 query 参数
 - 详情：`vod_play_from` + `vod_play_url`，格式 `名$URL#名$URL`，多线路 `$$$` 分隔；集数名不能含 `$` `#`
 - 播放：`{parse:0, url, header:{Referer,User-Agent}}`；防盗链站点必须带对 Referer；Origin 慎用（部分 CDN 校验 Origin 会 403）
 - `search(key)` 与列表共用 parseList
@@ -76,17 +90,18 @@ API 要签名时（返回"应用签名不可为空"等）：用 playwright 拦 *
 
 ```bash
 # 实网模式（走代理）
-node scripts/test_spider.js js/xxx.js category dm 1 --proxy http://127.0.0.1:7890
+node scripts/test_spider.js js/xxx.js category dm 1 '{"class":"剧情","area":"大陆"}' --proxy http://127.0.0.1:7890
 # 样本回放模式（不抓网站，秒级回归）
 node scripts/test_spider.js js/xxx.js category dm 1 --sample 'dm=./samples/dm_p1.html'
 ```
 
 验收断言（每条都必须过）：
-1. `home()` 分类数与站点一致
+1. `home()` 分类数与站点一致；**站点有筛选时 filters 组数与站点一致**（harness 会打印每组的取值数）
 2. `category()` 条数 > 0、`pagecount` 合理、`vod_id` 唯一
-3. `detail()` 至少 1 条播放线路、URL 以 http 开头、`curl -I`（带 header）验证可达
-4. `search()` 条数 > 0
-5. 用 analyze_page.js 产出存样本；站点改版后先用旧样本定位变化，再抓新页
+3. **筛选回归**：每组任取 1–2 个值跑 `category(tid,1,true,{"key":"值"})`，非空才算过；值为空时对照站点官方筛选链接是否同样为空（空=站点数据稀疏，保留取值）
+4. `detail()` 至少 1 条播放线路、URL 以 http 开头、`curl -I`（带 header）验证可达
+5. `search()` 条数 > 0
+6. 用 analyze_page.js 产出存样本；站点改版后先用旧样本定位变化，再抓新页
 
 ## Phase 4 — 配置接线与托管
 
@@ -141,7 +156,12 @@ config.json 的 sites 片段：
 - `pagecount` 从页面解析，别写死；解析不到给 1，别给 999
 - 播放 URL 带 `expires`/签名参数的不要长期缓存（过期即失效）
 - 列表页第一屏常混广告卡片（如 Erolabs 赞助位），解析前先甄别链接域名
-- 分页 URL 拼接注意 `?` 与 `&`：带 filter 参数时翻页用 `&page=`
+- 分页 URL 拼接注意 `?` 与 `&`：带 filter 参数时翻页用 `&page=`；先确认站点 page 是 0 基还是 1 基（App 恒传 1 起，0 基站点要 -1）
+- **filters 的 `init` 必须是空串 `""` 而不是 null**：FongMi 的 `Class.getExtend(true)` 只带 `init != null` 的组，null 会导致初始 extend 缺 key
+- filters 是 **按 type_id 键控的 map**（`{"1":[...]}`），不是数组；漏键 = 该分类没有筛选按钮
+- 各频道筛选取值往往不同（类型表、地区表），照抄一个频道的表到其他频道会出现「选了是空列表」；先逐频道核对再定表
+- 站点自身筛选链接可能返回空（数据稀疏），与站点行为一致即可，别急着当 bug 修
+- 排除类筛选（已观看/不想看）依赖登录态，TVBox 无账号体系，直接放弃
 - 真机 UI 自动化三坑：锁屏 = uiautomator 空 dump（先常亮）；触摸注入对部分视图失效（改 DPAD 焦点导航 + `keyevent 23`）；dump 窗口坐标与 input tap 屏幕坐标有刘海偏移（查 `mAppBounds`）
 - App 配置对话框：输入后软键盘会盖住确定按钮，先 `keyevent 4` 收键盘再点，否则提交是假象（用服务器访问日志验证真到达）
 - 无线 adb 配对端口 ≠ 连接端口，断连后 `adb mdns services` 查新端口重连
