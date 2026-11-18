@@ -87,15 +87,6 @@
       "filterable": 1
     },
     {
-      "key": "hd-dy",
-      "name": "蜜蜂电影",
-      "type": 3,
-      "api": "./js/hd-dy.js",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
       "key": "w2000",
       "name": "神马电影",
       "type": 3,
