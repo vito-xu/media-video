@@ -56,6 +56,8 @@ public class Config {
         Config item = new Config().type(type);
         // 首次启动默认用 APK 内置源（assets://config.json），离线可用；用户之后自行更换
         if (type == 0) item.url("assets://config.json");
+        // 内置直播源（CCTV/卫视/地方台），同样走 assets，离线可用
+        if (type == 1) item.url("assets://live/cn.m3u");
         return item;
     }
 
@@ -209,7 +211,10 @@ public class Config {
 
     public static Config live() {
         Config item = AppDatabase.get().getConfigDao().findOne(1);
-        return item == null ? create(1) : item;
+        if (item == null) return create(1);
+        // 老版本升级上来的库：直播配置存在但为空时补内置直播源，避免直播入口消失
+        if (TextUtils.isEmpty(item.getUrl())) item.url("assets://live/cn.m3u").update();
+        return item;
     }
 
     public static Config wall() {

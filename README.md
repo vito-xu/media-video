@@ -6,6 +6,8 @@
 > - 上游 `app/build.gradle` 引用的 20 个 `fongmi:*-release` 私有 AAR **未随源码发布**，
 >   本仓库通过「仓库内源码自编 + DLNA 上游开源库 + 官方 media3 1.5.1 替代」补齐，AAR 已随仓库提供
 > - 已实测：可编译、可安装、可播放（Redmi 平板 / Android 16）
+> - 内置 **58 个公开直播频道**（CCTV 全系 + 卫视 + 地方台），来源 iptv-org 社区列表并按可用性实测筛选，
+>   打包进 `assets/live/cn.m3u`，首次安装即出现「直播」入口，离线可读
 > - 编译步骤与全部改动见 [BUILD-NOTES.md](BUILD-NOTES.md)
 > - 附带 `skills/` 目录：TVBox 配置生成技能（站点分析 → 爬虫 → config.json）
 > - 许可证 **GPL-3.0**（见 [LICENSE.md](LICENSE.md)），版权归原作者 FongMi，本仓库仅做编译适配

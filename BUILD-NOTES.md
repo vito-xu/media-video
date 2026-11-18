@@ -83,6 +83,19 @@ FongMi 的 media3 是魔改版，以下私有 API 官方没有：
 | `ui/dialog/SubtitleDialog.java` | `addPosition/subPosition/getPosition/addTextSize/subTextSize/getTextSize/setUserDefaultTextSize` | 改用 `Setting` 存值 + 官方 `setBottomPaddingFraction`/`setFractionalTextSize` |
 | `player/exo/TrackNameProvider.java` | `MimeTypes.AUDIO_AV3A` / `VIDEO_ProRes` / `APPLICATION_OCTET` | 字符串字面量 `"audio/av3a"` / `"video/x-prores"` / `"application/octet-stream"` |
 
+## 内置直播源（2026-11-19）
+
+- 频道表：`live/cn.m3u`（仓库根），58 个频道分三组（央视频道 27 / 卫视频道 4 / 地方频道 27），
+  来源 iptv-org `countries/cn.m3u`，逐个 6 秒探活后仅保留返回 `#EXTM3U` 的条目；
+  已剔除境外/宗教/政治敏感频道。CCTV-4/5/6 的公开源全部失效，未收录。
+- 打包：`app/build.gradle` 新增 `bundleLive` 任务（`live/` → `src/main/assets/live/`），挂到 `preBuild`。
+- 加载：`Config.create(1)` 默认 url = `assets://live/cn.m3u`；`Config.live()` 对老库中 url 为空的
+  直播配置补该地址。`LiveParser.getText` 经 `UrlUtil.convert` 把 `assets://` 转成
+  `http://127.0.0.1:9978/live/cn.m3u`，由 NanoHTTPD 的 assets 兜底路由提供。
+- 注意：**不要**在 `config.json` 里写 `lives` 数组——`VodConfig.initLive` 会用点播配置覆写 type=1
+  的直播配置（url 变成点播 config），导致直播源失效。内置直播走独立的 type=1 配置。
+- 实测：CCTV-1 / CCTV-13 / 哈尔滨新闻综合 均 `RENDERING_START`，中文频道名、分组、台标正常。
+
 ## 产物与原版官方 APK 的差异
 
 | 项 | 官方 2.7.2 APK | 本产物 |

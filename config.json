@@ -112,6 +112,15 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    {
+      "key": "feiborui",
+      "name": "百元电影",
+      "type": 3,
+      "api": "./js/feiborui.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     }
   ],
   "ads": [

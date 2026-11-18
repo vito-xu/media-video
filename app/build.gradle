@@ -84,10 +84,14 @@ tasks.register('bundleJs', Copy) {
     from(rootProject.file('js'))
     into 'src/main/assets/js'
 }
-tasks.matching { it.name in ['bundleAssets', 'bundleJs'] }.configureEach {
+tasks.register('bundleLive', Copy) {
+    from(rootProject.file('live'))
+    into 'src/main/assets/live'
+}
+tasks.matching { it.name in ['bundleAssets', 'bundleJs', 'bundleLive'] }.configureEach {
     outputs.upToDateWhen { false }
 }
-preBuild.dependsOn 'bundleAssets', 'bundleJs'
+preBuild.dependsOn 'bundleAssets', 'bundleJs', 'bundleLive'
 
 android.applicationVariants.configureEach { variant ->
         variant.outputs.configureEach { output ->
