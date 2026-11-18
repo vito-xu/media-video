@@ -103,6 +103,15 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 1
+    },
+    {
+      "key": "koolearn",
+      "name": "新东方课堂",
+      "type": 3,
+      "api": "./js/koolearn.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
     }
   ],
   "ads": [
