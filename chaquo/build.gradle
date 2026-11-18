@@ -13,11 +13,16 @@ android {
         minSdk 21
         targetSdk 28
         python {
+            // Chaquopy 15.0.1 的 pip 依赖 `cgi` 模块（Python 3.13 已移除），
+            // 构建机需 Python 3.8–3.12。用环境变量指定，例如：
+            //   BUILD_PYTHON=/path/to/python3.11 gradle assembleMobilePythonArm64_v8aDebug
+            def buildPy = System.getenv("BUILD_PYTHON")
+            if (buildPy) buildPython buildPy
             version "3.8"
             pip {
                 install "lxml"
                 install "ujson"
-                install "pyquery"
+                install "pyquery==1.4.3"
                 install "requests"
                 install "jsonpath"
                 install "cachetools"
