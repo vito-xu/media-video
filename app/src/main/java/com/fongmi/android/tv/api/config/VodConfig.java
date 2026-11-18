@@ -111,6 +111,8 @@ public class VodConfig {
 
     private void loadConfig(Callback callback) {
         try {
+            // 未配置/配置被清空时，回退 APK 内置源（离线可用）
+            if (TextUtils.isEmpty(config.getUrl())) config.url("assets://config.json");
             checkJson(Json.parse(Decoder.getJson(config.getUrl())).getAsJsonObject(), callback);
         } catch (Throwable e) {
             if (TextUtils.isEmpty(config.getUrl())) App.post(() -> callback.error(""));
