@@ -87,6 +87,19 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
+    },
+    {
+      "key": "555cin",
+      "name": "555电影",
+      "type": 3,
+      "api": "./js/555cin.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "style": {
+        "type": "rect",
+        "ratio": 1.33
+      }
     }
   ],
   "ads": [
@@ -114,5 +127,42 @@
     "hm.baidu.com",
     "cnzz.com",
     "51.la"
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "ffmpeg-protocol-whitelist",
+          "value": "crypto,data,file,http,https,tcp,tls,udp"
+        }
+      ]
+    }
   ]
 }
