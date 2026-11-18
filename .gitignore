@@ -10,3 +10,11 @@ lib-*.aar
 .DS_Store
 __pycache__/
 *.pyc
+
+# 内置源同步产物（gradle bundleAssets/bundleJs 生成，勿手改）
+app/src/main/assets/config.json
+app/src/main/assets/js/0bv77aw.js
+app/src/main/assets/js/huahaiyy.js
+app/src/main/assets/js/555cin.js
+app/src/main/assets/js/koolearn.js
+app/src/main/assets/js/test_harness.js

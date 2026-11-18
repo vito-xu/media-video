@@ -59,6 +59,8 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // 个人分发：release 直接用 debug 签名，可直接覆盖安装
+            signingConfig signingConfigs.debug
         }
     }
 
@@ -73,7 +75,21 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
 
-    android.applicationVariants.configureEach { variant ->
+    tasks.register('bundleAssets', Copy) {
+    from(rootProject.file('config.json'))
+    into 'src/main/assets'
+    rename { 'config.json' }
+}
+tasks.register('bundleJs', Copy) {
+    from(rootProject.file('js'))
+    into 'src/main/assets/js'
+}
+tasks.matching { it.name in ['bundleAssets', 'bundleJs'] }.configureEach {
+    outputs.upToDateWhen { false }
+}
+preBuild.dependsOn 'bundleAssets', 'bundleJs'
+
+android.applicationVariants.configureEach { variant ->
         variant.outputs.configureEach { output ->
             outputFileName = "${variant.productFlavors[0].name}-${variant.productFlavors[1].name}-${variant.productFlavors[2].name}.apk"
         }

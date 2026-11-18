@@ -56,7 +56,8 @@
 -keep class com.p2p.** { *; }
 
 # QuickJS
--keep class com.fongmi.quickjs.method.** { *; }
+-keep class com.fongmi.quickjs.** { *; }
+-keep class com.whl.quickjs.wrapper.** { *; }
 
 # Sardine
 -keep class com.thegrizzlylabs.sardineandroid.** { *; }

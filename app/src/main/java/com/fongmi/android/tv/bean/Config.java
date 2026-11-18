@@ -53,7 +53,10 @@ public class Config {
     }
 
     public static Config create(int type) {
-        return new Config().type(type);
+        Config item = new Config().type(type);
+        // 首次启动默认用 APK 内置源（assets://config.json），离线可用；用户之后自行更换
+        if (type == 0) item.url("assets://config.json");
+        return item;
     }
 
     public static Config create(int type, String url) {
