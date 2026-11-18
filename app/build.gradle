@@ -131,23 +131,23 @@ dependencies {
     implementation(ext: 'aar', name: 'tvbus-release', group: 'fongmi', version: 'release')
     implementation(ext: 'aar', name: 'youtube-release', group: 'fongmi', version: 'release')
     implementation(ext: 'aar', name: 'zlive-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-common-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-container-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-database-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-datasource-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-datasource-okhttp-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-datasource-rtmp-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-decoder-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-decoder-av1-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-decoder-iamf-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-decoder-ffmpeg-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-exoplayer-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-exoplayer-dash-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-exoplayer-hls-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-exoplayer-rtsp-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-exoplayer-smoothstreaming-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-extractor-release', group: 'fongmi', version: 'release')
-    implementation(ext: 'aar', name: 'lib-ui-release', group: 'fongmi', version: 'release')
+    implementation 'androidx.media3:media3-common:1.5.1'
+    implementation 'androidx.media3:media3-container:1.5.1'
+    implementation 'androidx.media3:media3-database:1.5.1'
+    implementation 'androidx.media3:media3-datasource:1.5.1'
+    implementation 'androidx.media3:media3-datasource-okhttp:1.5.1'
+    implementation 'androidx.media3:media3-datasource-rtmp:1.5.1'
+    implementation 'androidx.media3:media3-decoder:1.5.1'
+    // NATIVE_TODO implementation(ext: 'aar', name: 'lib-decoder-av1-release', group: 'fongmi', version: 'release')
+    // NATIVE_TODO implementation(ext: 'aar', name: 'lib-decoder-iamf-release', group: 'fongmi', version: 'release')
+    // NATIVE_TODO implementation(ext: 'aar', name: 'lib-decoder-ffmpeg-release', group: 'fongmi', version: 'release')
+    implementation 'androidx.media3:media3-exoplayer:1.5.1'
+    implementation 'androidx.media3:media3-exoplayer-dash:1.5.1'
+    implementation 'androidx.media3:media3-exoplayer-hls:1.5.1'
+    implementation 'androidx.media3:media3-exoplayer-rtsp:1.5.1'
+    implementation 'androidx.media3:media3-exoplayer-smoothstreaming:1.5.1'
+    implementation 'androidx.media3:media3-extractor:1.5.1'
+    implementation 'androidx.media3:media3-ui:1.5.1'
     leanbackImplementation 'androidx.leanback:leanback:1.2.0-alpha04'
     leanbackImplementation 'com.github.JessYanCoding:AndroidAutoSize:1.2.1'
     mobileImplementation 'androidx.biometric:biometric:1.1.0'

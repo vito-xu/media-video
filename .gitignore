@@ -6,3 +6,7 @@ lib-*.aar
 /media*
 /Release
 /local.properties
+# 自编译补充
+.DS_Store
+__pycache__/
+*.pyc
