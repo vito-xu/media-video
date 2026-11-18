@@ -27,11 +27,34 @@ const CHANNELS = [
   { type_id: 'duanju', type_name: '短剧', path: '/duanju.html' },
 ];
 
-const AREAS = ['中国大陆', '美国', '日本', '英国', '中国香港', '法国', '韩国', '加拿大', '印度', '德国', '意大利', '中国台湾', '西班牙', '泰国', '俄罗斯', '澳大利亚', '墨西哥', '丹麦', '波兰', '土耳其', '巴西'];
+// 各频道类型（站点原样；home() 会与首页侧栏拾取结果合并，站点新增类型也能补上）
+const CLASSES_BY_CHANNEL = {
+  dianying: ['剧情', '喜剧', '动作', '爱情', '惊悚', '犯罪', '恐怖', '悬疑', '冒险', '奇幻', '科幻', '院线', '家庭', '历史', '战争', '纪录片', '古装', '音乐', '动画', '传记', '武侠', '运动', '西部', '短片'],
+  dianshiju: ['剧情', '喜剧', '爱情', '犯罪', '悬疑', '家庭', '古装', '惊悚', '动作', '奇幻', '科幻', '都市', '历史', '战争', '冒险', '武侠', '恐怖', '青春', '传记', '谍战', '情感', '纪录', '军旅', '时装'],
+  zongyi: ['真人秀', '脱口秀', '国产综艺', '喜剧', '晚会', '综艺', '音乐', '纪录', '游戏', '生活', '港台综艺', '日韩综艺', '剧情', '文化', '相声', '情感', '悬疑', '欧美综艺', '美食', '竞技', '爱情', '犯罪', '家庭', '历史'],
+  dongman: ['动画', '冒险', '喜剧', '奇幻', '剧情', '科幻', '动作', '儿童', '悬疑', '都市', '家庭', '国漫', '日常', '爱情', '玄幻', '日漫', '音乐', '治愈', '短片', '古风', '犯罪', '武侠', '运动', '校园'],
+  duanju: ['AI漫剧', '短剧', '剧情', '爱情', '爽文', '古装', '短片', '悬疑', '喜剧', '奇幻', '都市', '玄幻', '犯罪', '家庭', '穿越', '惊悚', '武侠', '科幻', '动作', '冒险', '恐怖', '青春', '历史', '动画', '战争'],
+};
+
+// 各频道地区取值不同（站点原样，2026-11 核实），写错会出现「选了是空列表」
+const AREAS_BY_CHANNEL = {
+  dianying: ['中国大陆', '美国', '日本', '英国', '中国香港', '法国', '韩国', '加拿大', '印度', '德国', '意大利', '中国台湾', '西班牙', '泰国', '俄罗斯', '澳大利亚', '比利时', '菲律宾', '墨西哥', '丹麦', '波兰', '印度尼西亚', '土耳其', '巴西'],
+  dianshiju: ['中国大陆', '美国', '日本', '英国', '中国香港', '韩国', '泰国', '中国台湾', '加拿大', '西班牙', '法国', '印度', '新加坡', '澳大利亚', '德国', '俄罗斯', '意大利', '墨西哥', '巴西', '土耳其', '瑞典', '丹麦', '波兰', '挪威'],
+  zongyi: ['中国大陆', '韩国', '美国', '中国香港', '英国', '中国台湾', '泰国', '加拿大', '法国', '印度', '澳大利亚', '巴西', '西班牙', '德国', '意大利', '墨西哥', '瑞典', '新加坡', '波兰', '俄罗斯', '阿联酋', '爱尔兰', '菲律宾', '阿根廷'],
+  dongman: ['日本', '中国大陆', '美国', '英国', '法国', '加拿大', '韩国', '中国台湾', '俄罗斯', '西班牙', '意大利', '中国香港', '澳大利亚', '德国', '比利时', '印度', '挪威', '马来西亚', '墨西哥', '泰国', '芬兰', '丹麦', '荷兰', '新西兰'],
+  duanju: ['中国大陆', '韩国', '日本', '美国', '泰国', '印度', '中国台湾', '加拿大', '墨西哥', '俄罗斯', '西班牙', '巴西', '意大利', '英国', '印度尼西亚', '法国', '中国香港'],
+};
 
 const SORTS = [
   { n: '默认', v: '' },
   { n: '热度', v: 'play_hot' },
+  { n: '豆瓣', v: 'group_douban' },
+];
+
+// 高级行「超清1080p」= 只列带王者TV蓝光线路的片子
+const ORIGINS = [
+  { n: '全部', v: '' },
+  { n: '超清1080p', v: '王者TV蓝光' },
 ];
 
 function headers(referer) {
@@ -128,25 +151,34 @@ function parseChannels(html) {
   return genres;
 }
 
-function buildFilters(genres) {
+function buildFilters(genres, channel) {
   const area = [{ n: '全部', v: '' }];
-  for (let i = 0; i < AREAS.length; i++) area.push({ n: AREAS[i], v: AREAS[i] });
+  const areas = AREAS_BY_CHANNEL[channel] || AREAS_BY_CHANNEL.dianying;
+  for (let i = 0; i < areas.length; i++) area.push({ n: areas[i], v: areas[i] });
 
   const year = [{ n: '全部', v: '' }];
   let now = 2026;
   try { now = new Date().getFullYear(); } catch (e) {}
   for (let y = now; y >= 2000; y--) year.push({ n: String(y), v: String(y) });
-  year.push({ n: '2020年代', v: '2020年代' });
-  year.push({ n: '2010年代', v: '2010年代' });
-  year.push({ n: '2000年代', v: '2000年代' });
+  const decades = ['2020年代', '2010年代', '2000年代', '90年代', '80年代', '70年代', '60年代', '50年代', '更早'];
+  for (let i = 0; i < decades.length; i++) year.push({ n: decades[i], v: decades[i] });
+
+  const sorts = channel === 'dianying' ? SORTS : SORTS.slice(0, 2);
+
+  const merged = (CLASSES_BY_CHANNEL[channel] || []).slice();
+  const extra = genres || [];
+  for (let i = 0; i < extra.length; i++) if (merged.indexOf(extra[i].v) === -1) merged.push(extra[i].v);
 
   const filters = [];
-  if (genres && genres.length > 0) {
-    filters.push({ key: 'class', name: '类型', init: '', value: [{ n: '全部', v: '' }].concat(genres) });
+  if (merged.length > 0) {
+    const values = [{ n: '全部', v: '' }];
+    for (let i = 0; i < merged.length; i++) values.push({ n: merged[i], v: merged[i] });
+    filters.push({ key: 'class', name: '类型', init: '', value: values });
   }
   filters.push({ key: 'area', name: '地区', init: '', value: area });
   filters.push({ key: 'year', name: '年份', init: '', value: year });
-  filters.push({ key: 'sort_field', name: '排序', init: '', value: SORTS });
+  filters.push({ key: 'sort_field', name: '排序', init: '', value: sorts });
+  filters.push({ key: 'origin', name: '画质', init: '', value: ORIGINS });
   return filters;
 }
 
@@ -210,7 +242,7 @@ const spider = {
     for (let i = 0; i < CHANNELS.length; i++) {
       const ch = CHANNELS[i];
       classes.push({ type_id: ch.type_id, type_name: ch.type_name });
-      filters[ch.type_id] = buildFilters(this.genres[ch.type_id] || []);
+      filters[ch.type_id] = buildFilters(this.genres[ch.type_id] || [], ch.type_id);
     }
     return JSON.stringify({ class: classes, filters: filters });
   },
@@ -233,6 +265,7 @@ const spider = {
     if (ext.area) qs.push('area=' + encodeURIComponent(ext.area));
     if (ext.year) qs.push('year=' + encodeURIComponent(ext.year));
     if (ext.sort_field) qs.push('sort_field=' + encodeURIComponent(ext.sort_field));
+    if (ext.origin) qs.push('origin=' + encodeURIComponent(ext.origin));
     if (page > 0) qs.push('page=' + page);
 
     const url = HOST + channel.path + (qs.length ? '?' + qs.join('&') : '');
