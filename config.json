@@ -29,32 +29,6 @@
       "jar": "https://qist.wyfc.qzz.io/jar/spider.jar;md5;427721a1497c71587dca53a2d80f2b42"
     },
     {
-      "key": "csp_xb_lez",
-      "name": "乐猪(XBiu)",
-      "type": 3,
-      "api": "csp_XBiu",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": {
-        "homeUrl": "http://www.lezhutv.com/type/{cateId}-{datePg}.html",
-        "playlist": {
-          "sort": 1
-        }
-      },
-      "jar": "http://home.jundie.top:81/jar/top98_1.jar"
-    },
-    {
-      "key": "baofeng",
-      "name": "暴风资源",
-      "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 1
-    },
-    {
       "key": "奴娜",
       "name": "奴娜丨APP",
       "type": 3,
