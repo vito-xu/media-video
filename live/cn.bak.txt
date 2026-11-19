@@ -1,492 +1,254 @@
-CCTV-1	央视频道	0p	826ms	http://204.12.221.218:8181/3m1080p/cctv1.m3u8
-CCTV-1	央视频道	0p	837ms	http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009
-CCTV-1	央视频道	0p	856ms	http://74.91.26.218:82/live/cctv1hd.m3u8
-CCTV-1	央视频道	0p	889ms	http://198.204.228.26/live/cctv1hd.m3u8
-CCTV-10	央视频道	0p	744ms	http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009
-CCTV-10	央视频道	0p	932ms	http://204.12.221.218:8181/3m1080p/cctv10.m3u8
-CCTV-10	央视频道	0p	2839ms	http://74.91.26.218:82/live/cctv10hd.m3u8
-CCTV-11	央视频道	0p	784ms	http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009
-CCTV-11	央视频道	0p	1780ms	http://38.75.136.137:98/gslb/dsdqpub/cctv11hd.m3u8?auth=testpub
-CCTV-11	央视频道	0p	1836ms	http://74.91.26.218:82/live/cctv11hd.m3u8
-CCTV-12	央视频道	0p	760ms	http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009
-CCTV-12	央视频道	0p	766ms	http://38.75.136.137:98/gslb/dsdqpub/cctv12hd.m3u8?auth=testpub
-CCTV-12	央视频道	0p	2846ms	http://107.150.60.122/live/cctv12hd.m3u8
-CCTV-12	央视频道	0p	4645ms	http://74.91.26.218:82/live/cctv12hd.m3u8
-CCTV-13	央视频道	0p	23ms	http://120.76.248.139/live/bfgd/4200000067.m3u8
-CCTV-13	央视频道	0p	835ms	http://74.91.26.218:82/live/cctv13hd.m3u8
-CCTV-13	央视频道	0p	909ms	http://38.75.136.137:98/gslb/dsdqbv/cctv13hd.m3u8?auth=test20251009
-CCTV-13	央视频道	0p	2244ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd
-CCTV-14	央视频道	0p	978ms	http://198.204.228.26/live/cctv14hd.m3u8
-CCTV-14	央视频道	0p	1244ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv14hd
-CCTV-14	央视频道	0p	1307ms	http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009
-CCTV-14	央视频道	0p	1505ms	http://204.12.221.218:8181/3m1080p/cctv14.m3u8
-CCTV-15	央视频道	0p	821ms	http://74.91.26.218:82/live/cctv15hd.m3u8
-CCTV-15	央视频道	0p	853ms	http://198.204.228.26/live/cctv15hd.m3u8
-CCTV-15	央视频道	0p	858ms	http://204.12.221.218:8181/3m1080p/cctv15.m3u8
-CCTV-15	央视频道	0p	1849ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv15hd
-CCTV-16	央视频道	0p	962ms	http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
-CCTV-16	央视频道	0p	1367ms	http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
-CCTV-17	央视频道	0p	817ms	http://74.91.26.218:82/live/cctv17hd.m3u8
-CCTV-17	央视频道	0p	1257ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv17hd
-CCTV-17	央视频道	0p	1751ms	http://38.75.136.137:98/gslb/dsdqbv/cctv17hd.m3u8?auth=test20251009
-CCTV-2	央视频道	0p	907ms	http://107.150.60.122/live/cctv2hd.m3u8
-CCTV-2	央视频道	0p	1510ms	http://204.12.221.218:8181/3m1080p/cctv2.m3u8
-CCTV-2	央视频道	0p	2582ms	http://192.151.150.154/live/cctv2hd.m3u8
-CCTV-2	央视频道	0p	4099ms	http://198.204.228.26/live/cctv2hd.m3u8
-CCTV-3	央视频道	0p	1269ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv3hd
-CCTV-3	央视频道	0p	1871ms	http://74.91.26.218:82/live/cctv3hd.m3u8
-CCTV-3	央视频道	0p	2640ms	http://107.150.60.122/live/cctv3hd.m3u8
-CCTV-4	央视频道	0p	856ms	http://107.150.60.122/live/cctv4hd.m3u8
-CCTV-4	央视频道	0p	887ms	http://173.208.212.130:8181/1080p/cctv4.m3u8
-CCTV-4	央视频道	0p	2303ms	http://74.91.26.218:82/live/cctv4hd.m3u8
-CCTV-4	央视频道	0p	2827ms	http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub
-CCTV-5	央视频道	0p	1528ms	http://107.150.60.122/live/cctv5hd.m3u8
-CCTV-5	央视频道	0p	2792ms	http://38.75.136.137:98/gslb/dsdqpub/cctv5p.m3u8?auth=testpub
-CCTV-5+	央视频道	0p	50ms	http://120.76.248.139/live/bfgd/4200000246.m3u8
-CCTV-5+	央视频道	0p	1348ms	http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
-CCTV-6	央视频道	0p	853ms	http://74.91.26.218:82/live/cctv6hd.m3u8
-CCTV-6	央视频道	0p	1573ms	http://198.204.228.26/live/cctv6hd.m3u8
-CCTV-6	央视频道	0p	1914ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv6hd
-CCTV-7	央视频道	0p	825ms	http://74.91.26.218:82/live/cctv7hd.m3u8
-CCTV-7	央视频道	0p	1275ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv7hd
-CCTV-7	央视频道	0p	1829ms	http://107.150.60.122/live/cctv7hd.m3u8
-CCTV-8	央视频道	0p	831ms	http://74.91.26.218:82/live/cctv8hd.m3u8
-CCTV-8	央视频道	0p	1230ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8k
-CCTV-9	央视频道	0p	870ms	http://192.151.150.154/live/cctv9hd.m3u8
-CCTV-9	央视频道	0p	1226ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv9hd
-CCTV-9	央视频道	0p	1470ms	http://107.150.60.122/live/cctv9hd.m3u8
-CCTV-9	央视频道	0p	1846ms	http://74.91.26.218:82/live/cctv9hd.m3u8
-CETV-1	央视频道	0p	18ms	http://120.76.248.139/live/bfgd/4200000135.m3u8
-CETV-1	央视频道	0p	1760ms	http://38.75.136.137:98/gslb/dsdqpub/cetv1hd.m3u8?auth=testpub
-CETV-1	央视频道	0p	1815ms	http://198.204.228.26/live/cetv1hd.m3u8
-CETV-1	央视频道	0p	4403ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cetv1hd
-CETV-3	央视频道	0p	825ms	http://198.204.228.26/live/cetv3.m3u8
-CETV-3	央视频道	0p	1845ms	http://107.150.60.122/live/cetv3.m3u8
-世界地理	央视频道	0p	1765ms	http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
-世界地理	央视频道	0p	1842ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=sjdl
-兵器科技	央视频道	0p	2283ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gfjs
-兵器科技	央视频道	0p	3774ms	http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
-央视台球	央视频道	0p	843ms	http://107.150.60.122/live/ystq.m3u8
-央视台球	央视频道	0p	1382ms	http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
-央视台球	央视频道	0p	2257ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ystq
-女性时尚	央视频道	0p	1752ms	http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
-女性时尚	央视频道	0p	1939ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=nxss
-怀旧剧场	央视频道	0p	768ms	http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub
-怀旧剧场	央视频道	0p	2600ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hjjc
-文化精品	央视频道	0p	837ms	http://107.150.60.122/live/ysjp.m3u8
-文化精品	央视频道	0p	1321ms	http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
-电视指南	央视频道	0p	4887ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dszn
-第一剧场	央视频道	0p	802ms	http://107.150.60.122/live/dyjc.m3u8
-第一剧场	央视频道	0p	1295ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dyjc
-第一剧场	央视频道	0p	2525ms	http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
-风云剧场	央视频道	0p	779ms	http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
-风云剧场	央视频道	0p	817ms	http://173.208.212.130:8181/720p/fyjc.m3u8
-风云剧场	央视频道	0p	2506ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyjc
-风云足球	央视频道	0p	786ms	http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
-风云足球	央视频道	0p	1400ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyzq
-风云音乐	央视频道	0p	786ms	http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
-风云音乐	央视频道	0p	3241ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyyy
-高尔夫网球	央视频道	0p	5837ms	http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
-三沙卫视	卫视频道	0p	862ms	http://198.204.228.26/live/ssws.m3u8
-三沙卫视	卫视频道	0p	1330ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ssws
-三沙卫视	卫视频道	0p	2767ms	http://38.75.136.137:98/gslb/dsdqpub/ssws.m3u8?auth=testpub
-三沙卫视	卫视频道	0p	2916ms	http://107.150.60.122/live/ssws.m3u8
-东南卫视	卫视频道	0p	14ms	http://120.76.248.139/live/bfgd/4200000483.m3u8
-东南卫视	卫视频道	0p	1460ms	http://107.150.60.122/live/dnwshd.m3u8
-东南卫视	卫视频道	0p	1738ms	http://38.75.136.137:98/gslb/dsdqpub/dnwshd.m3u8?auth=testpub
-东南卫视	卫视频道	0p	1874ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dnwshd
-东方卫视	卫视频道	0p	790ms	http://38.75.136.137:98/gslb/dsdqpub/dfwshd.m3u8?auth=testpub
-东方卫视	卫视频道	0p	1811ms	http://107.150.60.122/live/dfwshd.m3u8
-东方卫视	卫视频道	0p	2309ms	http://38.75.136.137:98/gslb/dsdqbv/dfwshd.m3u8?auth=test20251009
-东方卫视	卫视频道	0p	7891ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dfwshd
-云南卫视	卫视频道	0p	26ms	http://120.76.248.139/live/bfgd/4200000482.m3u8
-云南卫视	卫视频道	0p	1831ms	http://107.150.60.122/live/ynwshd.m3u8
-云南卫视	卫视频道	0p	1836ms	http://192.151.150.154/live/ynwshd.m3u8
-云南卫视	卫视频道	0p	2316ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ynwshd
-内蒙古卫视	卫视频道	0p	74ms	http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
-内蒙古卫视	卫视频道	0p	832ms	http://107.150.60.122/live/nmgws.m3u8
-内蒙古卫视	卫视频道	0p	2253ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=nmgws
-北京卫视	卫视频道	0p	22ms	http://120.76.248.139/live/bfgd/4200000083.m3u8
-北京卫视	卫视频道	0p	784ms	http://38.75.136.137:98/gslb/dsdqbv/bjwshd.m3u8?auth=test20251009
-北京卫视	卫视频道	0p	825ms	http://107.150.60.122/live/bjwshd.m3u8
-北京卫视	卫视频道	0p	1931ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=bjwshd
-吉林卫视	卫视频道	0p	114ms	http://221.7.175.154:8445/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1&authid=0
-吉林卫视	卫视频道	0p	1777ms	http://38.75.136.137:98/gslb/dsdqpub/jlwshd.m3u8?auth=testpub
-吉林卫视	卫视频道	0p	1836ms	http://107.150.60.122/live/jlwshd.m3u8
-吉林卫视	卫视频道	0p	1905ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jlwshd
-四川卫视	卫视频道	0p	1161ms	http://107.150.60.122/live/scwshd.m3u8
-四川卫视	卫视频道	0p	1812ms	http://38.75.136.137:98/gslb/dsdqpub/scwshd.m3u8?auth=testpub
-四川卫视	卫视频道	0p	1900ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=scwshd
-天津卫视	卫视频道	0p	842ms	http://107.150.60.122/live/tjwshd.m3u8
-天津卫视	卫视频道	0p	1886ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjwshd
-天津卫视	卫视频道	0p	2842ms	http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
-宁夏卫视	卫视频道	0p	839ms	http://107.150.60.122/live/nxws.m3u8
-宁夏卫视	卫视频道	0p	3870ms	http://198.204.228.26/live/nxws.m3u8
-安徽卫视	卫视频道	0p	832ms	http://198.204.228.26/live/ahwshd.m3u8
-安徽卫视	卫视频道	0p	864ms	http://107.150.60.122/live/ahwshd.m3u8
-安徽卫视	卫视频道	0p	1249ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ahwshd
-安徽卫视	卫视频道	0p	2836ms	http://204.12.221.218:8181/3m1080p/ahws.m3u8
-山东卫视	卫视频道	0p	21ms	http://120.76.248.139/live/bfgd/4200000099.m3u8
-山东卫视	卫视频道	0p	757ms	http://38.75.136.137:98/gslb/dsdqpub/sdwshd.m3u8?auth=testpub
-山东卫视	卫视频道	0p	832ms	http://198.204.228.26/live/sdwshd.m3u8
-山东卫视	卫视频道	0p	1905ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=sdwshd
-山西卫视	卫视频道	0p	1485ms	http://204.12.221.218:8181/3m1080p/sxws.m3u8
-山西卫视	卫视频道	0p	2196ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=sxwshd
-山西卫视	卫视频道	0p	2766ms	http://107.150.60.122/live/sxwshd.m3u8
-广东卫视	卫视频道	0p	22ms	http://120.76.248.139/live/bfgd/4200000092.m3u8
-广东卫视	卫视频道	0p	791ms	http://38.75.136.137:98/gslb/dsdqpub/gdwshd.m3u8?auth=testpub
-广东卫视	卫视频道	0p	857ms	http://107.150.60.122/live/gdwshd.m3u8
-广东卫视	卫视频道	0p	4227ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gdwshd
-广西卫视	卫视频道	0p	94ms	http://120.76.248.139/live/bfgd/4200000116.m3u8
-广西卫视	卫视频道	0p	755ms	http://38.75.136.137:98/gslb/dsdqpub/gxwshd.m3u8?auth=testpub
-广西卫视	卫视频道	0p	1435ms	http://107.150.60.122/live/gxwshd.m3u8
-广西卫视	卫视频道	0p	1813ms	http://198.204.228.26/live/gxwshd.m3u8
-新疆卫视	卫视频道	0p	1853ms	http://107.150.60.122/live/xjws.m3u8
-新疆卫视	卫视频道	0p	1917ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xjws
-新疆卫视	卫视频道	0p	2822ms	http://198.204.228.26/live/xjws.m3u8
-新疆卫视	卫视频道	0p	3797ms	http://38.75.136.137:98/gslb/dsdqpub/xjws.m3u8?auth=testpub
-江苏卫视	卫视频道	0p	773ms	http://38.75.136.137:98/gslb/dsdqbv/jswshd.m3u8?auth=test20251009
-江苏卫视	卫视频道	0p	845ms	http://107.150.60.122/live/jswshd.m3u8
-江苏卫视	卫视频道	0p	1774ms	http://38.75.136.137:98/gslb/dsdqpub/jswshd.m3u8?auth=testpub
-江苏卫视	卫视频道	0p	2242ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jswshd
-江西卫视	卫视频道	0p	83ms	http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0
-江西卫视	卫视频道	0p	1971ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=jxwshd
-江西卫视	卫视频道	0p	1971ms	http://107.150.60.122/live/jxwshd.m3u8
-江西卫视	卫视频道	0p	1987ms	http://38.75.136.137:98/gslb/dsdqpub/jxwshd.m3u8?auth=testpub
-河北卫视	卫视频道	0p	20ms	http://120.76.248.139/live/bfgd/4200000108.m3u8
-河北卫视	卫视频道	0p	107ms	https://event.pull.hebtv.com/live/live101.m3u8
-河北卫视	卫视频道	0p	779ms	http://38.75.136.137:98/gslb/dsdqpub/hewshd.m3u8?auth=testpub
-河北卫视	卫视频道	0p	2521ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hewshd
-河南卫视	卫视频道	0p	761ms	http://38.75.136.137:98/gslb/dsdqpub/hawshd.m3u8?auth=testpub
-河南卫视	卫视频道	0p	846ms	http://107.150.60.122/live/hawshd.m3u8
-河南卫视	卫视频道	0p	3184ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hawshd
-浙江卫视	卫视频道	0p	47ms	https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
-浙江卫视	卫视频道	0p	82ms	http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8
-浙江卫视	卫视频道	0p	839ms	http://107.150.60.122/live/zjwshd.m3u8
-浙江卫视	卫视频道	0p	1387ms	http://38.75.136.137:98/gslb/dsdqpub/zjwshd.m3u8?auth=testpub
-海南卫视	卫视频道	0p	21ms	http://120.76.248.139/live/bfgd/4200000473.m3u8
-深圳卫视	卫视频道	0p	21ms	http://120.76.248.139/live/bfgd/4200000100.m3u8
-深圳卫视	卫视频道	0p	1056ms	http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
-深圳卫视	卫视频道	0p	1528ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=szwshd
-深圳卫视	卫视频道	0p	7879ms	http://107.150.60.122/live/szwshd.m3u8
-湖北卫视	卫视频道	0p	22ms	http://120.76.248.139/live/bfgd/4200000102.m3u8
-湖北卫视	卫视频道	0p	1834ms	http://107.150.60.122/live/hbwshd.m3u8
-湖北卫视	卫视频道	0p	2885ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hbwshd
-湖南卫视	卫视频道	0p	49ms	https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8
-湖南卫视	卫视频道	0p	199ms	http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
-湖南卫视	卫视频道	0p	826ms	http://74.91.26.218:82/live/hnwshd.m3u8
-湖南卫视	卫视频道	0p	849ms	http://107.150.60.122/live/hnwshd.m3u8
-甘肃卫视	卫视频道	0p	20ms	http://120.76.248.139/live/bfgd/4200000119.m3u8
-甘肃卫视	卫视频道	0p	795ms	http://38.75.136.137:98/gslb/dsdqpub/gswshd.m3u8?auth=testpub
-甘肃卫视	卫视频道	0p	1401ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gswshd
-西藏卫视	卫视频道	0p	23ms	http://120.76.248.139/live/bfgd/4200000121.m3u8
-西藏卫视	卫视频道	0p	76ms	http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0
-西藏卫视	卫视频道	0p	838ms	http://107.150.60.122/live/xzws.m3u8
-西藏卫视	卫视频道	0p	2265ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xzws
-贵州卫视	卫视频道	0p	1267ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gzwshd
-贵州卫视	卫视频道	0p	1453ms	http://204.12.221.218:8181/3m1080p/gzws.m3u8
-贵州卫视	卫视频道	0p	1489ms	http://107.150.60.122/live/gzwshd.m3u8
-贵州卫视	卫视频道	0p	2711ms	http://38.75.136.137:98/gslb/dsdqpub/gzwshd.m3u8?auth=testpub
-辽宁卫视	卫视频道	0p	814ms	http://107.150.60.122/live/lnwshd.m3u8
-辽宁卫视	卫视频道	0p	1819ms	http://38.75.136.137:98/gslb/dsdqpub/lnwshd.m3u8?auth=testpub
-辽宁卫视	卫视频道	0p	1850ms	http://198.204.228.26/live/lnwshd.m3u8
-辽宁卫视	卫视频道	0p	1862ms	http://204.12.221.218:8181/3m1080p/lnws.m3u8
-重庆卫视	卫视频道	0p	833ms	http://107.150.60.122/live/cqwshd.m3u8
-重庆卫视	卫视频道	0p	1263ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cqwshd
-陕西卫视	卫视频道	0p	884ms	http://107.150.60.122/live/snwshd.m3u8
-陕西卫视	卫视频道	0p	887ms	http://192.151.150.154/live/snwshd.m3u8
-陕西卫视	卫视频道	0p	1942ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=snwshd
-青海卫视	卫视频道	0p	36ms	http://120.76.248.139/live/bfgd/4200000111.m3u8
-青海卫视	卫视频道	0p	168ms	https://hls-qhmh.lanzhousobey.cn/qhmh/mhds.m3u8
-青海卫视	卫视频道	0p	1878ms	http://107.150.60.122/live/qhws.m3u8
-青海卫视	卫视频道	0p	3619ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=qhws
-黑龙江卫视	卫视频道	0p	142ms	http://120.76.248.139/live/bfgd/4200000095.m3u8
-黑龙江卫视	卫视频道	0p	791ms	http://38.75.136.137:98/gslb/dsdqpub/hljwshd.m3u8?auth=testpub
-黑龙江卫视	卫视频道	0p	861ms	http://107.150.60.122/live/hljwshd.m3u8
-黑龙江卫视	卫视频道	0p	1249ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hljwshd
-天元围棋	体育频道	0p	2830ms	http://204.12.221.218:8181/3m1080p/gztywq.m3u8
-天津体育	体育频道	0p	1394ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjtv5
-天津体育	体育频道	0p	1774ms	http://38.75.136.137:98/gslb/dsdqpub/tjtv5.m3u8?auth=testpub
-精品体育	体育频道	1080p	1031ms	https://epg.pw/stream/f7556eccd4ae06b0c2991fdc7a4f8388496559f728cc82459a8e50346040e226.m3u8
-精品体育	体育频道	1080p	1092ms	https://epg.pw/stream/866a097a0907c9832440f8df38272dd555abf05200dfbafcc137e214c9b30ca7.m3u8
-足球频道	体育频道	1080p	953ms	https://epg.pw/stream/c7df950876e6a1ceb8be74ee86f9f702cebbbae29f1d15124ef8f86fd43161cf.m3u8
-CHC动作电影	电影频道	0p	801ms	http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
-CHC动作电影	电影频道	0p	854ms	http://107.150.60.122/live/chcdz.m3u8
-CHC动作电影	电影频道	0p	1462ms	http://198.204.228.26/live/chcdz.m3u8
-CHC家庭影院	电影频道	0p	770ms	http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
-CHC家庭影院	电影频道	0p	1050ms	http://192.151.150.154/live/chcjt.m3u8
-CHC家庭影院	电影频道	0p	1528ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcjt
-CHC家庭影院	电影频道	0p	2700ms	http://107.150.60.122/live/chcjt.m3u8
-黑莓电影	电影频道	1080p	1066ms	https://epg.pw/stream/ffcb6572863f0745a7369fbd9d901f1dfd0ab8fab8bad8bebb4e01c90b303c47.m3u8
-音乐现场	音乐频道	0p	546ms	https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8
-水浒传	经典剧场	0p	2135ms	http://173.208.234.146/live/vlshz.m3u8
-西游记	经典剧场	0p	859ms	http://173.208.234.146/live/vlxyj.m3u8
-闯关东	经典剧场	0p	854ms	http://173.208.234.146/live/lbchuangguandong.m3u8
-七台河新闻综合	黑龙江频道	0p	333ms	http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8
-万州三峡移民	重庆频道	0p	107ms	http://123.146.162.24:8017/c2F0hmi/1000/live.m3u8
-三明新闻综合	福建频道	0p	302ms	http://ls.qingting.fm/live/4885.m3u8
-三明新闻综合	福建频道	0p	355ms	https://ls.qingting.fm/live/5022100/64k.m3u8
-上海第一财经	上海频道	0p	933ms	https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
-上虞新闻综合	浙江频道	0p	82ms	http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
-东阳影视生活	浙江频道	0p	178ms	http://l.cztvcloud.com/channels/lantian/SXdongyang1/720p.m3u8
-中国蓝新闻	浙江频道	0p	264ms	http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
-之江纪录	浙江频道	0p	22ms	http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
-之江纪录	浙江频道	0p	126ms	https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
-云南娱乐	云南频道	0p	205ms	https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
-云南都市	云南频道	0p	202ms	https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
-云和新闻综合	浙江频道	0p	893ms	http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8
-云和新闻综合	浙江频道	0p	913ms	http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed
-云霄综合	福建频道	0p	72ms	http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian,
-云霄综合	福建频道	0p	108ms	http://live.zzyxxw.com:85/live/xwzh.m3u8
-云霄综合	福建频道	0p	139ms	https://live.zzyxxw.com:2443/live/xwzh.m3u8
-云霄综合	福建频道	0p	235ms	http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian
-井研综合	四川频道	0p	397ms	http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8
-亳州农村	安徽频道	0p	516ms	http://zbbf2.ahbztv.com/live/418.m3u8?zanhd
-亳州农村	安徽频道	0p	1021ms	http://zbbf2.ahbztv.com/live/418.m3u8
-亳州新闻	安徽频道	0p	17ms	http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
-任丘综合	河北频道	0p	217ms	https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8
-伊犁哈萨克	新疆频道	0p	164ms	http://110.153.180.106:55555/out_3/index.m3u8?zxinjd
-伊犁经济法制	新疆频道	0p	152ms	http://110.153.180.106:55555/out_4/index.m3u8
-伊犁维吾尔	新疆频道	0p	158ms	http://110.153.180.106:55555/out_2/index.m3u8
-余姚姚江文化	浙江频道	0p	950ms	http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed
-余姚姚江文化	浙江频道	0p	1338ms	https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
-余姚新闻综合	浙江频道	0p	1302ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl
-余姚新闻综合	浙江频道	0p	1341ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
-余姚综合	浙江频道	0p	1574ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?
-余姚综合	浙江频道	0p	1644ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed
-余姚综合	浙江频道	0p	1653ms	https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
-余杭未来E	浙江频道	0p	1767ms	http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8
-余杭未来E	浙江频道	0p	1868ms	http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
-余杭综合	浙江频道	0p	1897ms	http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8
-余杭综合	浙江频道	0p	1979ms	http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
-六安公共	安徽频道	0p	76ms	http://ls.qingting.fm/live/1794199.m3u8
-六安新闻综合	安徽频道	0p	131ms	http://ls.qingting.fm/live/267.m3u8
-兰溪新闻综合	浙江频道	0p	1985ms	http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8
-兴隆综合	河北频道	0p	193ms	https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8
-剑阁综合	四川频道	0p	202ms	https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8
-北京新闻	北京频道	0p	507ms	https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8
-北京科教	北京频道	0p	383ms	http://120.76.248.139/live/bfgd/4200000113.m3u8
-南京少儿	江苏频道	0p	135ms	http://nklive.nbs.cn/hls/e0981f3f-1a20-4a59-b8d1-17feb83a4610/index.m3u8
-南京教科	江苏频道	0p	102ms	http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
-南京新闻综合	江苏频道	0p	70ms	http://nklive.nbs.cn/hls/d511bc9d-a694-4453-b3a2-4fc842cc97a1/index.m3u8
-南宁影视娱乐	广西频道	0p	40ms	http://hls.nntv.cn/nnlive/YSYL_244.m3u8
-南宁都市生活	广西频道	0p	481ms	http://615bbf179ba53515dccad7b1da5d1ad9.livehwc3.cn/hls.nntv.cn/nnlive/WLSH_24.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2598844eaee8a4265e706fc14b3fc11d
-厦门卫视	福建频道	0p	1031ms	http://198.204.228.26/live/xmws.m3u8
-厦门卫视	福建频道	0p	1395ms	http://107.150.60.122/live/xmws.m3u8
-厦门卫视	福建频道	0p	1650ms	http://192.151.150.154/live/xmws.m3u8
-厦门卫视	福建频道	0p	2449ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xmws
-吉林乡村	吉林频道	0p	532ms	https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
-名山综合	四川频道	0p	159ms	https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8
-嘉兴新闻综合	浙江频道	0p	335ms	http://live.zohi.tv/video/s10001-fztv-1/index.m3u8
-嘉峪关综合	甘肃频道	0p	35ms	http://play.kankanlive.com/live/1720583434627241.m3u8
-固镇新闻	安徽频道	0p	305ms	http://www.guzhenm.com:7001/hls/hd-live.m3u8
-固镇新闻	安徽频道	0p	349ms	http://www.guzhenm.com:7001/hls/hd-live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
-大湾区卫视	广东频道	0p	785ms	http://38.75.136.137:98/gslb/dsdqpub/nfws.m3u8?auth=testpub
-大湾区卫视	广东频道	0p	1258ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=nfws
-大湾区卫视	广东频道	0p	1486ms	http://107.150.60.122/live/nfws.m3u8
-大湾区卫视	广东频道	0p	2854ms	http://198.204.228.26/live/nfws.m3u8
-天祝综合	甘肃频道	0p	41ms	https://play.kankanlive.com/live/1656487214793905.m3u8
-太谷新闻综合	山西频道	0p	196ms	https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0
-安多卫视	青海频道	0p	199ms	https://liveout.xntv.tv/a65jur/96iln2.m3u8
-安顺新闻	贵州频道	0p	149ms	https://hplayer1.juyun.tv/camera/154379194.m3u8
-定襄综合	山西频道	0p	405ms	http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8?zshanxd
-宾阳综合	广西频道	0p	54ms	http://pulls.myun.tv/live/0dkp33j5.m3u8
-山东教育	山东频道	0p	246ms	https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
-嵊州新闻综合	浙江频道	0p	1013ms	http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
-嵊州新闻综合	浙江频道	0p	1045ms	http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed
-嵊泗综合	浙江频道	0p	793ms	http://l.cztvcloud.com/channels/lantian/SXshengsi1/720p.m3u8
-嵊泗综合	浙江频道	0p	798ms	http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed
-平泉综合	河北频道	0p	285ms	https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8
-平湖民生休闲	浙江频道	0p	64ms	http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8?zzhed
-平湖民生休闲	浙江频道	0p	81ms	http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8
-广东体育	广东频道	0p	1766ms	http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
-广东体育	广东频道	0p	3461ms	http://r.jdshipin.com/LiYdg
-广东新闻	广东频道	0p	1780ms	http://38.75.136.137:98/gslb/dsdqpub/gdxw.m3u8?auth=testpub
-广东民生	广东频道	0p	2780ms	http://38.75.136.137:98/gslb/dsdqpub/gdgg.m3u8?auth=testpub
-广东珠江	广东频道	0p	1920ms	http://r.jdshipin.com/sE5vO
-广东珠江	广东频道	0p	2500ms	http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
-广元公共	四川频道	0p	167ms	https://m3u8.channel.dzsm.com/nmip-media/channellive/channel101257/playlist.m3u8
-广安公共	四川频道	0p	138ms	http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8
-广安公共	四川频道	0p	143ms	http://live1.gatv.com.cn:85/live/GGPD.m3u8
-广安公共	四川频道	0p	151ms	http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8?zsicd
-广州综合	广东频道	0p	29ms	http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8
-广州综合	广东频道	0p	47ms	https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
-广州综合	广东频道	0p	60ms	https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488
-广州综合	广东频道	0p	144ms	https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
-广德生活	安徽频道	0p	428ms	https://live.gdtv.ah.cn/live/newsTV.m3u8
-广西国际	广西频道	0p	896ms	http://192.151.150.154/live/gxgj.m3u8
-广西国际	广西频道	0p	935ms	http://198.204.228.26/live/gxgj.m3u8
-广西国际	广西频道	0p	1814ms	http://107.150.60.122/live/gxgj.m3u8
-广西国际	广西频道	0p	1890ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxgj
-广西新闻	广西频道	0p	1014ms	http://107.150.60.122/live/gxxw.m3u8
-广西新闻	广西频道	0p	1468ms	http://198.204.228.26/live/gxxw.m3u8
-广西新闻	广西频道	0p	1564ms	http://38.75.136.137:98/gslb/dsdqpub/gxxw.m3u8?auth=testpub
-广西新闻	广西频道	0p	2264ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxxw
-庆元新闻综合	浙江频道	0p	22ms	http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl=
-庆元综合	浙江频道	0p	32ms	http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8
-庆元综合	浙江频道	0p	42ms	http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?zzhed?
-延边卫视	吉林频道	0p	195ms	https://srs.iyb983.cn:443/video/CYS/index.m3u8
-延边卫视	吉林频道	0p	207ms	https://srs.iyb983.cn/video/CYS/index.m3u8
-开化国家公园	浙江频道	0p	61ms	http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed
-开化国家公园	浙江频道	0p	71ms	http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed#http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8
-开化国家公园	浙江频道	0p	79ms	http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8
-开化国家公园	浙江频道	0p	91ms	http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed
-开化新闻综合	浙江频道	0p	49ms	http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed
-张掖新闻综合	甘肃频道	0p	42ms	https://play.kankanlive.com/live/1720583434627241.m3u8
-数码时代	浙江频道	0p	22ms	http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8?zzhed
-文山州公共	云南频道	0p	102ms	http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel8/playlist.m3u8?zyund
-文山州公共	云南频道	0p	139ms	http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel8/playlist.m3u8
-文山州新闻综合	云南频道	0p	111ms	http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8?zyund
-文成新闻综合	浙江频道	0p	24ms	http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8
-文成综合	浙江频道	0p	34ms	http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed?
-文成综合	浙江频道	0p	60ms	http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed
-新昌新闻综合	浙江频道	0p	92ms	https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
-新昌生活	浙江频道	0p	69ms	http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
-新沂新闻	江苏频道	0p	133ms	http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
-新沂生活	江苏频道	0p	96ms	http://live.xysrmt.cn/shpd/sd/live.m3u8?zjiangsd
-新野综合	河南频道	0p	110ms	http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8?zhend?
-新野综合	河南频道	0p	117ms	http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8?zhend
-新野综合	河南频道	0p	124ms	http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8
-新闻综合	上海频道	0p	251ms	https://m3u8channel.yunxya.com/nmip-media/channellive/channel100028/playlist.m3u8
-旺苍新闻综合	四川频道	0p	424ms	http://channel.wcrmt.cn:80/nmip-media/channellive/channel105268/playlist.m3u8
-旺苍新闻综合	四川频道	0p	424ms	http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
-昌黎综合	河北频道	0p	208ms	https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8
-普陀新闻综合	浙江频道	0p	40ms	http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
-普陀电视台	浙江频道	0p	44ms	http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
-朝阳新闻综合	辽宁频道	0p	22ms	http://120.76.248.139/live/bfgd/4200000282.m3u8
-松潘新闻综合	四川频道	0p	433ms	http://live.spccmc.com:90/live/spxwzh.m3u8?zsicd
-松潘新闻综合	四川频道	0p	451ms	http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
-松潘新闻综合	四川频道	0p	488ms	http://live.spccmc.com:90/live/spxwzh.m3u8
-松阳综合	浙江频道	0p	24ms	http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
-松阳综合	浙江频道	0p	66ms	http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8?zzhed?
-梨园	河南频道	0p	290ms	https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549
-欢笑剧场	上海频道	0p	852ms	http://38.75.136.137:98/gslb/dsdqpub/hxjchd.m3u8?auth=testpub
-武义新闻综合	浙江频道	0p	51ms	http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed
-武义新闻综合	浙江频道	0p	73ms	http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8
-武汉一台新闻综合	湖北频道	0p	95ms	https://ls.qingting.fm/live/20198/64k.m3u8
-永城综合	河南频道	0p	83ms	http://tvpull.dxhmt.cn:9081/tv/11481-1.m3u8
-永昌综合	甘肃频道	0p	58ms	https://play.kankanlive.com/live/1652755738635915.m3u8
-汶川新闻综合	四川频道	0p	417ms	http://live.iwcmt.cn:90/live/zhxw.m3u8?zsicd
-汶川新闻综合	四川频道	0p	421ms	http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#rtmp://tv.mcrm.org.cn:1935/channellive/tv01
-汶川新闻综合	四川频道	0p	453ms	http://live.iwcmt.cn:90/live/zhxw.m3u8
-汾西综合	山西频道	1080p	231ms	https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd
-沐川综合	四川频道	0p	407ms	http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd
-沭阳综合	江苏频道	0p	255ms	http://shuyang-tv-hls.cm.jstv.com/shuyang-tv/shuyangzh.m3u8
-河北农民	河北频道	0p	82ms	http://ls.qingting.fm/live/1650.m3u8
-河北农民	河北频道	0p	128ms	https://ls.qingting.fm/live/1650/64k.m3u8
-河北农民	河北频道	0p	190ms	https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd
-泸县新闻综合	四川频道	0p	529ms	https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8
-洞头综合	浙江频道	0p	60ms	http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8?zzhed?
-洞头综合	浙江频道	0p	62ms	http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8
-浙江休闲台	浙江频道	0p	74ms	http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8
-浙江公共新闻	浙江频道	0p	46ms	http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
-浙江公共新闻	浙江频道	0p	66ms	http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8
-浙江国际	浙江频道	0p	20ms	http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
-浙江国际	浙江频道	0p	44ms	https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
-浙江少儿	浙江频道	0p	37ms	https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
-浙江教科	浙江频道	0p	18ms	http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-浙江教科	浙江频道	0p	43ms	https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-浙江教科影视	浙江频道	0p	43ms	http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8
-浙江教育	浙江频道	0p	69ms	http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
-浙江数码时代	浙江频道	0p	18ms	http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
-浙江数码时代	浙江频道	0p	25ms	http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8?zzhed
-浙江新闻	浙江频道	0p	26ms	http://ali-m-l.cztv.com/channels/lantian/channel007/720p.m3u8
-浙江新闻	浙江频道	0p	61ms	https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?
-浙江民生	浙江频道	0p	54ms	http://ali-m-l.cztv.com/channels/lantian/channel06/720p.m3u8
-浙江民生	浙江频道	0p	84ms	https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?
-浙江生活	浙江频道	0p	94ms	http://ls.qingting.fm/live/1099.m3u8
-浙江经济	浙江频道	0p	65ms	https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?
-浙江经济	浙江频道	0p	74ms	http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-浙江经济	浙江频道	0p	91ms	http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8
-浙江经济生活	浙江频道	0p	108ms	https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-浙江经济生活	浙江频道	0p	125ms	http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8
-浙江经视	浙江频道	0p	49ms	http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
-浙江遂昌	浙江频道	0p	63ms	http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8
-浙江钱江	浙江频道	0p	54ms	https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
-浙江钱江都市	浙江频道	0p	73ms	http://ali-xwl.cztv.com/live/channel02720Plxw.m3u8
-浙江钱江都市	浙江频道	0p	158ms	http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8
-海南新闻	海南频道	0p	69ms	http://ls.qingting.fm/live/1861.m3u8
-海宁新闻综合	浙江频道	0p	201ms	https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8
-涟水电视台综合	江苏频道	0p	263ms	http://lianshui-tv-hls.cm.jstv.com/lianshui-tv/lsxw.m3u8?zjiangsd
-涟水电视台综合	江苏频道	0p	559ms	https://lianshui-tv-hls.cm.jstv.com:443/lianshui-tv/lsxw.m3u8
-涟水综合	江苏频道	0p	200ms	http://lianshui-tv-hls.cm.jstv.com/lianshui-tv/lsxw.m3u8
-清河经济综艺	河北频道	0p	216ms	https://jwcdnqx.hebyun.com.cn/live/qinghe1/1500k/tzwj_video.m3u8
-渭源新闻	甘肃频道	0p	19ms	http://play.kankanlive.com/live/1720408280309109.m3u8
-湖州公共民生	浙江频道	0p	109ms	http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e
-湖州文化娱乐	浙江频道	0p	60ms	http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887
-湖州新闻综合	浙江频道	0p	117ms	http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865
-滦平新闻	河北频道	0p	135ms	http://jwplay.hebyun.com.cn/live/LPTV001/1500k/tzwj_video.m3u8
-灌阳新闻综合	广西频道	0p	85ms	https://ls.qingting.fm/live/5043/64k.m3u8
-甘孜综合	四川频道	0p	408ms	https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8
-甘肃经济	甘肃频道	0p	40ms	https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8
-甘肃都市	甘肃频道	0p	42ms	https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
-田东综合	广西频道	0p	23ms	http://pulls.myun.tv/live/0dkp33j5.m3u8
-白银综合	甘肃频道	0p	32ms	http://play.kankanlive.com/live/1720408089419110.m3u8
-祁门综合	安徽频道	0p	265ms	http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
-福州少儿	福建频道	0p	244ms	http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
-福州生活	福建频道	0p	93ms	http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
-福建新闻	福建频道	0p	20ms	http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8
-福建海峡卫视	福建频道	0p	3062ms	http://r.jdshipin.com/WtYt3
-福建经济	福建频道	0p	22ms	http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8
-秦安综合	甘肃频道	0p	46ms	https://play.kankanlive.com/live/1659926941626981.m3u8
-第一财经	上海频道	0p	21ms	http://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
-绍兴电视台公共	浙江频道	0p	1960ms	http://live.shaoxing.com.cn/video/s10001-sxtv2/index.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
-缙云新闻综合	浙江频道	0p	1944ms	http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8
-缙云综合	浙江频道	0p	1943ms	http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed
-缙云综合	浙江频道	0p	2017ms	http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed?
-苏州4k	江苏频道	0p	136ms	https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
-苏州文化生活	江苏频道	0p	59ms	https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
-苏州新闻综合	江苏频道	0p	132ms	https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
-苏州生活资讯	江苏频道	0p	75ms	https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
-苏州社会经济	江苏频道	0p	101ms	https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
-荆门新闻综合	湖北频道	0p	444ms	http://stream.jmtv.com.cn/xwzh/sd/live.m3u8
-荆门新闻综合	湖北频道	0p	517ms	https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691
-荥经综合	四川频道	0p	329ms	https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8
-荥阳综合	河南频道	0p	105ms	http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?zhend
-荥阳综合	河南频道	0p	135ms	http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8
-荥阳综合	河南频道	0p	141ms	http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?wsSecret=df15530a0abec41b14bca00fc96270d1&wsTime=1654956569
-营山电视台	四川频道	0p	245ms	http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8
-萧山生活	浙江频道	0p	571ms	http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed?
-萧山生活	浙江频道	0p	625ms	https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
-萧山生活	浙江频道	0p	626ms	http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed
-萧山生活	浙江频道	0p	630ms	http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
-衡水公共	河北频道	0p	62ms	http://ls.qingting.fm/live/2810.m3u8
-西宁新闻综合	青海频道	0p	193ms	https://liveout.xntv.tv/a65jur/96iln2.m3u8
-西宁新闻综合	青海频道	0p	514ms	https://liveout.xntv.tv/a65jur/96iln2.m3u8?zqinghd
-西峰综合	甘肃频道	0p	46ms	https://play.kankanlive.com/live/1683944827526991.m3u8
-诸暨新闻综合	浙江频道	0p	90ms	http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed
-诸暨新闻综合	浙江频道	0p	93ms	https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8
-象山新闻综合	浙江频道	0p	25ms	http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
-象山综合	浙江频道	0p	21ms	http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
-象山综合	浙江频道	0p	152ms	http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
-辽宁影视剧	辽宁频道	0p	22ms	http://120.76.248.139/live/bfgd/4200000070.m3u8
-辽宁教育青少	辽宁频道	0p	33ms	http://120.76.248.139/live/bfgd/4200000075.m3u8
-辽宁生活	辽宁频道	0p	36ms	http://120.76.248.139/live/bfgd/4200000073.m3u8
-辽宁经济	辽宁频道	0p	43ms	http://120.76.248.139/live/bfgd/4200000480.m3u8
-辽宁都市	辽宁频道	0p	129ms	https://ls.qingting.fm/live/1099/64k.m3u8
-遂昌综合	浙江频道	0p	18ms	http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed
-邢台综合	河北频道	0p	160ms	http://jwplay.hebyun.com.cn/live/xtsrmtzs/1500k/tzwj_video.m3u8
-邢台综合	河北频道	0p	222ms	https://jwplay.hebyun.com.cn:443/live/xtsrmtzs/1500k/tzwj_video.m3u8
-邯郸公共	河北频道	0p	211ms	https://jwcdnqx.hebyun.com.cn/live/hdgg/1500k/tzwj_video.m3u8
-邯郸新闻	河北频道	0p	216ms	https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8
-邯郸科技教育	河北频道	0p	267ms	https://jwcdnqx.hebyun.com.cn/live/hdkj/1500k/tzwj_video.m3u8
-邯郸科教	河北频道	0p	187ms	https://jwcdnqx.hebyun.com.cn/live/hdkj/1500k/tzwj_video.m3u8
-都市剧场	上海频道	0p	535ms	https://satellitepull.cnr.cn/live/wxcqxwgb/playlist.m3u8
-都市剧场	上海频道	0p	1427ms	http://38.75.136.137:98/gslb/dsdqpub/dsjchd.m3u8?auth=testpub
-重庆新闻	重庆频道	0p	802ms	http://38.75.136.137:98/gslb/dsdqpub/cqxw.m3u8?auth=testpub
-金川新闻综合	四川频道	0p	321ms	http://139.203.180.9:90/live/zhxw.m3u8
-金川新闻综合	四川频道	0p	359ms	http://live.jinchuanrmt.com:90/live/zhxw.m3u8?zsicd
-铜陵新闻综合	安徽频道	0p	332ms	https://ls.qingting.fm/live/21303/64k.m3u8
-长沙新闻	湖南频道	0p	173ms	http://ls.qingting.fm/live/4877.m3u8
-长沙新闻综合	湖南频道	0p	117ms	http://ls.qingting.fm/live/4877.m3u8
-长白朝语	吉林频道	0p	64ms	http://hplayer1.juyun.tv:80/camera/11344136.m3u8
-陕西公共	陕西频道	0p	610ms	http://ls.qingting.fm/live/1222.m3u8
-雅安新闻综合	四川频道	0p	430ms	https://play.yunxya.com/channellive/xinwen.m3u8
-青川综合	四川频道	0p	336ms	http://qcfile.qcrmt.com/nmip-media/channellive/channel100933/playlist.m3u8
-青田电视台	浙江频道	0p	115ms	http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
-靖江新闻综合	江苏频道	0p	86ms	http://ls.qingting.fm/live/23797.m3u8
-黑龙江少儿	黑龙江频道	0p	99ms	https://ls.qingting.fm/live/4972/64k.m3u8
-黑龙江新闻	黑龙江频道	0p	93ms	https://ls.qingting.fm/live/4974/64k.m3u8
-龙泉新闻综合	浙江频道	0p	28ms	http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
-龙游新闻综合	浙江频道	0p	70ms	http://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8?zzhed
-龙游生活娱乐	浙江频道	0p	78ms	http://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8?zzhed
+CCTV-1	央视频道	0p	0.34MB/s	余量2.3x	792ms	http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009
+CCTV-11	央视频道	0p	0.4MB/s	余量3.3x	860ms	http://38.75.136.137:98/gslb/dsdqpub/cctv11hd.m3u8?auth=testpub
+CCTV-11	央视频道	0p	0.35MB/s	余量2.4x	919ms	http://74.91.26.218:82/live/cctv11hd.m3u8
+CCTV-11	央视频道	0p	0.35MB/s	余量2.4x	1916ms	http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009
+CCTV-12	央视频道	0p	0.33MB/s	余量2.5x	1906ms	http://74.91.26.218:82/live/cctv12hd.m3u8
+CCTV-12	央视频道	0p	0.36MB/s	余量2.4x	1600ms	http://38.75.136.137:98/gslb/dsdqpub/cctv12hd.m3u8?auth=testpub
+CCTV-14	央视频道	0p	0.53MB/s	余量3.6x	771ms	http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009
+CCTV-14	央视频道	0p	0.42MB/s	余量2.9x	2508ms	http://198.204.228.26/live/cctv14hd.m3u8
+CCTV-14	央视频道	0p	0.3MB/s	余量2.0x	874ms	http://204.12.221.218:8181/3m1080p/cctv14.m3u8
+CCTV-15	央视频道	0p	0.46MB/s	余量3.4x	799ms	http://38.75.136.137:98/gslb/dsdqbv/cctv15hd.m3u8?auth=test20251009
+CCTV-15	央视频道	0p	0.34MB/s	余量2.4x	889ms	http://204.12.221.218:8181/3m1080p/cctv15.m3u8
+CCTV-15	央视频道	0p	0.34MB/s	余量2.1x	837ms	http://74.91.26.218:82/live/cctv15hd.m3u8
+CCTV-17	央视频道	0p	0.37MB/s	余量2.5x	808ms	http://38.75.136.137:98/gslb/dsdqbv/cctv17hd.m3u8?auth=test20251009
+CCTV-17	央视频道	0p	0.34MB/s	余量2.1x	959ms	http://74.91.26.218:82/live/cctv17hd.m3u8
+CCTV-2	央视频道	0p	0.36MB/s	余量2.5x	856ms	http://107.150.60.122/live/cctv2hd.m3u8
+CCTV-2	央视频道	0p	0.33MB/s	余量2.3x	824ms	http://204.12.221.218:8181/3m1080p/cctv2.m3u8
+CCTV-3	央视频道	0p	0.45MB/s	余量3.1x	2903ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv3hd
+CCTV-4	央视频道	0p	0.33MB/s	余量2.6x	847ms	http://107.150.60.122/live/cctv4hd.m3u8
+CCTV-4	央视频道	0p	0.32MB/s	余量2.5x	1752ms	http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub
+CCTV-7	央视频道	0p	0.36MB/s	余量2.4x	857ms	http://74.91.26.218:82/live/cctv7hd.m3u8
+CCTV-8	央视频道	0p	0.3MB/s	余量2.1x	854ms	http://74.91.26.218:82/live/cctv8hd.m3u8
+CCTV-9	央视频道	0p	0.38MB/s	余量2.6x	843ms	http://74.91.26.218:82/live/cctv9hd.m3u8
+CCTV-9	央视频道	0p	0.3MB/s	余量2.1x	3198ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv9hd
+CETV-1	央视频道	0p	0.32MB/s	余量2.2x	814ms	http://38.75.136.137:98/gslb/dsdqpub/cetv1hd.m3u8?auth=testpub
+世界地理	央视频道	0p	0.33MB/s	余量2.4x	771ms	http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
+世界地理	央视频道	0p	0.31MB/s	余量2.1x	5488ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=sjdl
+兵器科技	央视频道	0p	0.33MB/s	余量2.3x	801ms	http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
+女性时尚	央视频道	0p	0.33MB/s	余量2.2x	1704ms	http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
+三沙卫视	卫视频道	0p	0.31MB/s	余量2.0x	2816ms	http://107.150.60.122/live/ssws.m3u8
+东南卫视	卫视频道	0p	0.33MB/s	余量2.3x	1842ms	http://38.75.136.137:98/gslb/dsdqpub/dnwshd.m3u8?auth=testpub
+东南卫视	卫视频道	0p	0.3MB/s	余量2.0x	1595ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dnwshd
+东方卫视	卫视频道	0p	0.37MB/s	余量2.5x	1891ms	http://107.150.60.122/live/dfwshd.m3u8
+云南卫视	卫视频道	0p	0.33MB/s	余量2.6x	2130ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ynwshd
+内蒙古卫视	卫视频道	0p	2.18MB/s	余量5.0x	167ms	http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
+北京卫视	卫视频道	0p	0.37MB/s	余量2.5x	1515ms	http://107.150.60.122/live/bjwshd.m3u8
+北京卫视	卫视频道	0p	0.32MB/s	余量2.2x	1829ms	http://38.75.136.137:98/gslb/dsdqbv/bjwshd.m3u8?auth=test20251009
+吉林卫视	卫视频道	0p	0.38MB/s	余量2.6x	768ms	http://38.75.136.137:98/gslb/dsdqpub/jlwshd.m3u8?auth=testpub
+天津卫视	卫视频道	0p	0.32MB/s	余量2.3x	2319ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjwshd
+安徽卫视	卫视频道	0p	0.39MB/s	余量3.0x	1266ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ahwshd
+山东卫视	卫视频道	0p	0.36MB/s	余量2.3x	2794ms	http://38.75.136.137:98/gslb/dsdqpub/sdwshd.m3u8?auth=testpub
+山西卫视	卫视频道	0p	0.37MB/s	余量2.6x	1819ms	http://107.150.60.122/live/sxwshd.m3u8
+广西卫视	卫视频道	0p	0.32MB/s	余量2.2x	3280ms	http://198.204.228.26/live/gxwshd.m3u8
+新疆卫视	卫视频道	0p	0.3MB/s	余量2.1x	1890ms	http://107.150.60.122/live/xjws.m3u8
+江苏卫视	卫视频道	0p	0.39MB/s	余量2.8x	1867ms	http://107.150.60.122/live/jswshd.m3u8
+江西卫视	卫视频道	0p	0.64MB/s	余量4.4x	110ms	http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+河北卫视	卫视频道	0p	2.19MB/s	余量5.6x	188ms	https://event.pull.hebtv.com/live/live101.m3u8
+河北卫视	卫视频道	0p	0.33MB/s	余量2.1x	3940ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hewshd
+河南卫视	卫视频道	0p	0.38MB/s	余量2.5x	854ms	http://107.150.60.122/live/hawshd.m3u8
+浙江卫视	卫视频道	0p	3.78MB/s	余量46.7x	74ms	http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8
+浙江卫视	卫视频道	0p	4.35MB/s	余量23.8x	73ms	https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+深圳卫视	卫视频道	0p	0.37MB/s	余量2.2x	2523ms	http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
+湖南卫视	卫视频道	0p	4.91MB/s	余量27.9x	196ms	http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+湖南卫视	卫视频道	0p	5.85MB/s	余量21.2x	52ms	https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8
+湖南卫视	卫视频道	0p	0.32MB/s	余量2.6x	2183ms	http://74.91.26.218:82/live/hnwshd.m3u8
+湖南卫视	卫视频道	0p	0.32MB/s	余量2.2x	4250ms	http://107.150.60.122/live/hnwshd.m3u8
+贵州卫视	卫视频道	0p	0.35MB/s	余量2.3x	1885ms	http://204.12.221.218:8181/3m1080p/gzws.m3u8
+贵州卫视	卫视频道	0p	0.3MB/s	余量2.0x	1853ms	http://107.150.60.122/live/gzwshd.m3u8
+辽宁卫视	卫视频道	0p	0.3MB/s	余量2.1x	1999ms	http://107.150.60.122/live/lnwshd.m3u8
+辽宁卫视	卫视频道	0p	0.3MB/s	余量2.0x	2193ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnwshd
+重庆卫视	卫视频道	0p	0.36MB/s	余量2.3x	2917ms	http://107.150.60.122/live/cqwshd.m3u8
+陕西卫视	卫视频道	0p	0.34MB/s	余量2.2x	1541ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=snwshd
+黑龙江卫视	卫视频道	0p	0.41MB/s	余量2.3x	862ms	http://107.150.60.122/live/hljwshd.m3u8
+黑龙江卫视	卫视频道	0p	0.37MB/s	余量2.1x	3353ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hljwshd
+天津体育	体育频道	0p	0.31MB/s	余量2.1x	1777ms	http://38.75.136.137:98/gslb/dsdqpub/tjtv5.m3u8?auth=testpub
+CHC动作电影	电影频道	0p	0.37MB/s	余量2.3x	4366ms	http://107.150.60.122/live/chcdz.m3u8
+CHC家庭影院	电影频道	0p	0.33MB/s	余量2.2x	1067ms	http://192.151.150.154/live/chcjt.m3u8
+CHC家庭影院	电影频道	0p	0.33MB/s	余量2.2x	3833ms	http://107.150.60.122/live/chcjt.m3u8
+CHC家庭影院	电影频道	0p	0.33MB/s	余量2.2x	2571ms	http://63.141.230.178:82/gslb/zbdq5.m3u8?id=chcjt
+CHC家庭影院	电影频道	0p	0.31MB/s	余量2.1x	3538ms	http://198.204.228.26/live/chcjt.m3u8
+音乐现场	音乐频道	0p	1.59MB/s	余量59.0x	2039ms	https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8
+上虞新闻综合	浙江频道	0p	0.88MB/s	余量4.8x	161ms	http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed
+东阳影视生活	浙江频道	0p	0.68MB/s	余量3.9x	287ms	http://l.cztvcloud.com/channels/lantian/SXdongyang1/720p.m3u8
+中国蓝新闻	浙江频道	0p	0.35MB/s	余量8.5x	182ms	http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8
+之江纪录	浙江频道	0p	0.59MB/s	余量3.3x	76ms	http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+之江纪录	浙江频道	0p	0.59MB/s	余量3.2x	119ms	https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
+云南娱乐	云南频道	0p	3.0MB/s	余量15.8x	309ms	https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8
+云南都市	云南频道	0p	2.0MB/s	余量11.0x	165ms	https://hwapi.yntv.net/62hdvf/rjwt14.m3u8
+云和新闻综合	浙江频道	0p	0.55MB/s	余量3.0x	182ms	http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8
+云和新闻综合	浙江频道	0p	0.55MB/s	余量3.0x	85ms	http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed
+云霄综合	福建频道	0p	0.88MB/s	余量51.4x	139ms	https://live.zzyxxw.com:2443/live/xwzh.m3u8
+云霄综合	福建频道	0p	0.54MB/s	余量31.6x	119ms	http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian
+云霄综合	福建频道	0p	0.54MB/s	余量31.3x	70ms	http://live.zzyxxw.com:85/live/xwzh.m3u8
+云霄综合	福建频道	0p	0.43MB/s	余量25.1x	68ms	http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian,
+亳州农村	安徽频道	0p	3.28MB/s	余量10.8x	540ms	http://zbbf2.ahbztv.com/live/418.m3u8?zanhd
+亳州农村	安徽频道	0p	2.94MB/s	余量9.7x	538ms	http://zbbf2.ahbztv.com/live/418.m3u8
+亳州新闻	安徽频道	0p	5.43MB/s	余量21.7x	69ms	http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
+任丘综合	河北频道	0p	1.1MB/s	余量7.2x	229ms	https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8
+伊犁哈萨克	新疆频道	0p	0.45MB/s	余量3.1x	171ms	http://110.153.180.106:55555/out_3/index.m3u8?zxinjd
+伊犁经济法制	新疆频道	0p	0.64MB/s	余量4.4x	171ms	http://110.153.180.106:55555/out_4/index.m3u8
+伊犁维吾尔	新疆频道	0p	0.51MB/s	余量3.5x	177ms	http://110.153.180.106:55555/out_2/index.m3u8
+余姚姚江文化	浙江频道	0p	0.54MB/s	余量5.2x	118ms	http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed
+余姚姚江文化	浙江频道	0p	0.53MB/s	余量5.1x	152ms	https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8
+余姚新闻综合	浙江频道	0p	0.61MB/s	余量3.3x	130ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
+余姚新闻综合	浙江频道	0p	0.57MB/s	余量3.1x	120ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl
+余姚综合	浙江频道	0p	0.64MB/s	余量3.5x	187ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?
+余姚综合	浙江频道	0p	0.55MB/s	余量3.0x	1092ms	http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed
+余姚综合	浙江频道	0p	0.51MB/s	余量2.8x	259ms	https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8
+余杭未来E	浙江频道	0p	0.54MB/s	余量3.6x	186ms	http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed
+余杭未来E	浙江频道	0p	0.52MB/s	余量3.5x	203ms	http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8
+余杭综合	浙江频道	0p	0.49MB/s	余量3.4x	149ms	http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8
+余杭综合	浙江频道	0p	0.49MB/s	余量3.4x	150ms	http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed
+兰溪新闻综合	浙江频道	0p	0.51MB/s	余量2.9x	94ms	http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8
+兴隆综合	河北频道	0p	1.53MB/s	余量12.5x	158ms	https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8
+剑阁综合	四川频道	0p	0.72MB/s	余量4.5x	175ms	https://m3u8.channel.dzsm.com/nmip-media/channellive/channel105549/playlist.m3u8
+南京教科	江苏频道	0p	0.64MB/s	余量2.1x	203ms	http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
+南宁影视娱乐	广西频道	0p	4.7MB/s	余量23.0x	68ms	http://hls.nntv.cn/nnlive/YSYL_244.m3u8
+南宁都市生活	广西频道	0p	2.4MB/s	余量7.2x	282ms	http://615bbf179ba53515dccad7b1da5d1ad9.livehwc3.cn/hls.nntv.cn/nnlive/WLSH_24.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2598844eaee8a4265e706fc14b3fc11d
+厦门卫视	福建频道	0p	0.34MB/s	余量2.3x	917ms	http://192.151.150.154/live/xmws.m3u8
+吉林乡村	吉林频道	0p	1.65MB/s	余量60.3x	531ms	https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8
+名山综合	四川频道	0p	5.24MB/s	余量20.1x	177ms	https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8
+嘉兴新闻综合	浙江频道	0p	0.52MB/s	余量10.0x	142ms	http://live.zohi.tv/video/s10001-fztv-1/index.m3u8
+嘉峪关综合	甘肃频道	0p	1.53MB/s	余量6.3x	76ms	http://play.kankanlive.com/live/1720583434627241.m3u8
+固镇新闻	安徽频道	0p	0.69MB/s	余量2.5x	141ms	http://www.guzhenm.com:7001/hls/hd-live.m3u8
+大湾区卫视	广东频道	0p	0.33MB/s	余量2.2x	879ms	http://38.75.136.137:98/gslb/dsdqpub/nfws.m3u8?auth=testpub
+天祝综合	甘肃频道	0p	2.07MB/s	余量5.2x	43ms	https://play.kankanlive.com/live/1656487214793905.m3u8
+太谷新闻综合	山西频道	0p	1.22MB/s	余量3.5x	71ms	https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0
+定襄综合	山西频道	0p	0.9MB/s	余量7.5x	345ms	http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8?zshanxd
+山东教育	山东频道	0p	0.84MB/s	余量13.3x	288ms	https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8
+嵊州新闻综合	浙江频道	0p	0.54MB/s	余量3.0x	141ms	http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed
+嵊州新闻综合	浙江频道	0p	0.51MB/s	余量2.8x	150ms	http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
+嵊泗综合	浙江频道	0p	0.63MB/s	余量3.5x	3441ms	http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed
+嵊泗综合	浙江频道	0p	0.53MB/s	余量2.9x	180ms	http://l.cztvcloud.com/channels/lantian/SXshengsi1/720p.m3u8
+平泉综合	河北频道	0p	1.1MB/s	余量9.9x	199ms	https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8
+平湖民生休闲	浙江频道	0p	0.41MB/s	余量15.3x	185ms	http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8
+平湖民生休闲	浙江频道	0p	0.31MB/s	余量11.7x	224ms	http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8?zzhed
+广元公共	四川频道	0p	0.77MB/s	余量3.8x	181ms	https://m3u8.channel.dzsm.com/nmip-media/channellive/channel101257/playlist.m3u8
+广安公共	四川频道	0p	0.81MB/s	余量7.5x	100ms	http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8
+广安公共	四川频道	0p	0.65MB/s	余量4.5x	115ms	http://live1.gatv.com.cn:85/live/GGPD.m3u8
+广安公共	四川频道	0p	0.42MB/s	余量3.9x	281ms	http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8?zsicd
+广州综合	广东频道	0p	1.66MB/s	余量9.7x	50ms	https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488
+广州综合	广东频道	0p	0.94MB/s	余量5.5x	83ms	https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
+广州综合	广东频道	0p	0.63MB/s	余量3.7x	79ms	http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8
+广州综合	广东频道	0p	0.65MB/s	余量3.0x	3621ms	http://r.jdshipin.com/iR6Gq
+广德生活	安徽频道	0p	0.63MB/s	余量22.4x	223ms	https://live.gdtv.ah.cn/live/newsTV.m3u8
+庆元新闻综合	浙江频道	0p	0.57MB/s	余量3.1x	145ms	http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl=
+庆元综合	浙江频道	0p	0.6MB/s	余量3.3x	161ms	http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?zzhed?
+庆元综合	浙江频道	0p	0.48MB/s	余量2.6x	144ms	http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8
+开化国家公园	浙江频道	0p	0.51MB/s	余量2.8x	236ms	http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed
+开化国家公园	浙江频道	0p	0.51MB/s	余量2.8x	310ms	http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8
+开化新闻综合	浙江频道	0p	0.59MB/s	余量3.2x	171ms	http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed
+张掖新闻综合	甘肃频道	0p	1.24MB/s	余量5.1x	45ms	https://play.kankanlive.com/live/1720583434627241.m3u8
+数码时代	浙江频道	0p	0.51MB/s	余量2.8x	173ms	http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8?zzhed
+文山州公共	云南频道	0p	0.65MB/s	余量5.4x	98ms	http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel8/playlist.m3u8?zyund
+文山州公共	云南频道	0p	0.41MB/s	余量3.4x	115ms	http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel8/playlist.m3u8
+文山州新闻综合	云南频道	0p	0.53MB/s	余量4.5x	110ms	http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8?zyund
+文成新闻综合	浙江频道	0p	0.44MB/s	余量2.4x	151ms	http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8
+文成综合	浙江频道	0p	0.46MB/s	余量2.5x	132ms	http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed
+新昌新闻综合	浙江频道	0p	0.5MB/s	余量2.7x	189ms	https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
+新昌生活	浙江频道	0p	0.46MB/s	余量3.6x	130ms	http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
+新野综合	河南频道	0p	1.51MB/s	余量11.4x	95ms	http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8?zhend
+新野综合	河南频道	0p	1.5MB/s	余量11.3x	102ms	http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8
+新野综合	河南频道	0p	1.47MB/s	余量11.1x	107ms	http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8?zhend?
+新闻综合	上海频道	0p	0.81MB/s	余量3.5x	742ms	https://m3u8channel.yunxya.com/nmip-media/channellive/channel100028/playlist.m3u8
+旺苍新闻综合	四川频道	0p	0.4MB/s	余量3.0x	170ms	http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+普陀新闻综合	浙江频道	0p	0.42MB/s	余量2.3x	127ms	http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
+普陀电视台	浙江频道	0p	0.47MB/s	余量2.6x	217ms	http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8
+松潘新闻综合	四川频道	0p	0.48MB/s	余量3.5x	157ms	http://live.spccmc.com:90/live/spxwzh.m3u8?zsicd
+松潘新闻综合	四川频道	0p	0.39MB/s	余量2.9x	152ms	http://live.spccmc.com:90/live/spxwzh.m3u8
+松潘新闻综合	四川频道	0p	0.35MB/s	余量2.6x	162ms	http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+松阳综合	浙江频道	0p	0.46MB/s	余量2.5x	143ms	http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8
+松阳综合	浙江频道	0p	0.43MB/s	余量2.3x	105ms	http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8?zzhed?
+梨园	河南频道	0p	1.62MB/s	余量4.4x	133ms	https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549
+武义新闻综合	浙江频道	0p	0.44MB/s	余量3.4x	131ms	http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed
+武义新闻综合	浙江频道	0p	0.43MB/s	余量3.4x	119ms	http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8
+永城综合	河南频道	0p	1.45MB/s	余量10.2x	112ms	http://tvpull.dxhmt.cn:9081/tv/11481-1.m3u8
+永昌综合	甘肃频道	0p	0.99MB/s	余量4.1x	41ms	https://play.kankanlive.com/live/1652755738635915.m3u8
+汶川新闻综合	四川频道	0p	0.32MB/s	余量16.2x	1155ms	http://live.iwcmt.cn:90/live/zhxw.m3u8
+汾西综合	山西频道	1080p	1.53MB/s	余量5.7x	232ms	https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd
+河北农民	河北频道	0p	1.11MB/s	余量9.1x	198ms	https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd
+泸县新闻综合	四川频道	0p	1.6MB/s	余量6.3x	315ms	https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8
+洞头综合	浙江频道	0p	0.47MB/s	余量2.6x	193ms	http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8?zzhed?
+洞头综合	浙江频道	0p	0.47MB/s	余量2.6x	102ms	http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8
+浙江休闲台	浙江频道	0p	0.46MB/s	余量3.2x	78ms	http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8
+浙江公共新闻	浙江频道	0p	0.46MB/s	余量2.5x	72ms	http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8
+浙江公共新闻	浙江频道	0p	0.43MB/s	余量2.3x	71ms	http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+浙江国际	浙江频道	0p	0.59MB/s	余量3.5x	65ms	http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+浙江国际	浙江频道	0p	0.58MB/s	余量3.5x	102ms	https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+浙江少儿	浙江频道	0p	0.63MB/s	余量3.5x	99ms	https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?
+浙江少儿	浙江频道	0p	0.62MB/s	余量3.4x	87ms	https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+浙江教科	浙江频道	0p	0.64MB/s	余量3.5x	73ms	http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+浙江教科	浙江频道	0p	0.62MB/s	余量3.4x	99ms	https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+浙江教科影视	浙江频道	0p	0.49MB/s	余量3.0x	71ms	http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8
+浙江教育	浙江频道	0p	0.95MB/s	余量7.9x	72ms	http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
+浙江数码时代	浙江频道	0p	0.52MB/s	余量2.9x	87ms	http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8
+浙江数码时代	浙江频道	0p	0.49MB/s	余量2.7x	77ms	http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8?zzhed
+浙江新闻	浙江频道	0p	0.65MB/s	余量4.4x	105ms	http://ali-m-l.cztv.com/channels/lantian/channel007/720p.m3u8
+浙江新闻	浙江频道	0p	0.64MB/s	余量3.5x	109ms	https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?
+浙江民生	浙江频道	0p	0.78MB/s	余量4.6x	72ms	http://ali-m-l.cztv.com/channels/lantian/channel06/720p.m3u8
+浙江民生	浙江频道	0p	0.68MB/s	余量3.7x	95ms	https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?
+浙江经济	浙江频道	0p	0.6MB/s	余量4.3x	89ms	http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8
+浙江经济	浙江频道	0p	0.6MB/s	余量3.3x	57ms	http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+浙江经济	浙江频道	0p	0.59MB/s	余量3.2x	101ms	https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?
+浙江经济生活	浙江频道	0p	1.14MB/s	余量6.2x	125ms	https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+浙江经济生活	浙江频道	0p	0.91MB/s	余量4.9x	58ms	http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8
+浙江经视	浙江频道	0p	0.49MB/s	余量3.0x	65ms	http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
+浙江遂昌	浙江频道	0p	0.37MB/s	余量3.5x	123ms	http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8
+浙江钱江	浙江频道	0p	1.81MB/s	余量10.0x	119ms	https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
+浙江钱江都市	浙江频道	0p	0.87MB/s	余量6.3x	87ms	http://ali-xwl.cztv.com/live/channel02720Plxw.m3u8
+浙江钱江都市	浙江频道	0p	1.04MB/s	余量5.7x	95ms	http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8
+清河经济综艺	河北频道	0p	1.1MB/s	余量7.2x	396ms	https://jwcdnqx.hebyun.com.cn/live/qinghe1/1500k/tzwj_video.m3u8
+湖州公共民生	浙江频道	0p	0.39MB/s	余量2.3x	200ms	http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e
+湖州文化娱乐	浙江频道	0p	0.47MB/s	余量3.5x	91ms	http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887
+湖州新闻综合	浙江频道	0p	0.51MB/s	余量2.7x	85ms	http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865
+滦平新闻	河北频道	0p	0.33MB/s	余量2.2x	237ms	http://jwplay.hebyun.com.cn/live/LPTV001/1500k/tzwj_video.m3u8
+甘孜综合	四川频道	0p	1.34MB/s	余量5.3x	298ms	https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8
+甘肃经济	甘肃频道	0p	0.93MB/s	余量36.4x	561ms	https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8
+甘肃都市	甘肃频道	0p	1.6MB/s	余量62.5x	542ms	https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8
+白银综合	甘肃频道	0p	4.12MB/s	余量16.9x	31ms	http://play.kankanlive.com/live/1720408089419110.m3u8
+祁门综合	安徽频道	0p	3.53MB/s	余量14.1x	548ms	http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
+福州少儿	福建频道	0p	1.47MB/s	余量28.2x	266ms	http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
+福州生活	福建频道	0p	1.56MB/s	余量29.9x	93ms	http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8
+福建新闻	福建频道	0p	1.9MB/s	余量70.9x	37ms	http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8
+福建海峡卫视	福建频道	0p	2.8MB/s	余量56.0x	1349ms	http://r.jdshipin.com/WtYt3
+福建经济	福建频道	0p	0.96MB/s	余量36.0x	528ms	http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8
+缙云新闻综合	浙江频道	0p	0.53MB/s	余量2.9x	179ms	http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8
+缙云综合	浙江频道	0p	0.47MB/s	余量2.6x	154ms	http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed?
+缙云综合	浙江频道	0p	0.41MB/s	余量2.2x	1193ms	http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed
+苏州4k	江苏频道	0p	1.68MB/s	余量6.4x	319ms	https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
+苏州文化生活	江苏频道	0p	0.84MB/s	余量8.4x	300ms	https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
+苏州新闻综合	江苏频道	0p	1.53MB/s	余量5.8x	200ms	https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
+苏州生活资讯	江苏频道	0p	0.41MB/s	余量4.3x	195ms	https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
+苏州社会经济	江苏频道	0p	2.16MB/s	余量8.4x	184ms	https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
+荆门新闻综合	湖北频道	0p	1.34MB/s	余量8.5x	144ms	http://stream.jmtv.com.cn/xwzh/sd/live.m3u8
+荆门新闻综合	湖北频道	0p	1.27MB/s	余量8.0x	198ms	https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691
+荥经综合	四川频道	0p	1.42MB/s	余量5.1x	310ms	https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8
+荥阳综合	河南频道	0p	4.61MB/s	余量32.7x	97ms	http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?wsSecret=df15530a0abec41b14bca00fc96270d1&wsTime=1654956569
+荥阳综合	河南频道	0p	2.19MB/s	余量15.5x	57ms	http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8
+荥阳综合	河南频道	0p	2.16MB/s	余量15.4x	92ms	http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8?zhend
+萧山生活	浙江频道	0p	0.55MB/s	余量3.2x	237ms	http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed?
+萧山生活	浙江频道	0p	0.49MB/s	余量2.9x	1185ms	http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
+萧山生活	浙江频道	0p	0.49MB/s	余量2.8x	547ms	https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8
+萧山生活	浙江频道	0p	0.47MB/s	余量2.7x	76ms	http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed
+西宁新闻综合	青海频道	0p	0.86MB/s	余量3.2x	191ms	https://liveout.xntv.tv/a65jur/96iln2.m3u8
+西宁新闻综合	青海频道	0p	0.85MB/s	余量3.1x	202ms	https://liveout.xntv.tv/a65jur/96iln2.m3u8?zqinghd
+西峰综合	甘肃频道	0p	1.4MB/s	余量5.6x	100ms	https://play.kankanlive.com/live/1683944827526991.m3u8
+诸暨新闻综合	浙江频道	0p	0.43MB/s	余量2.6x	81ms	http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed
+诸暨新闻综合	浙江频道	0p	0.38MB/s	余量2.3x	164ms	https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8
+象山新闻综合	浙江频道	0p	0.49MB/s	余量2.7x	67ms	http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
+象山综合	浙江频道	0p	0.69MB/s	余量3.4x	180ms	http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39
+遂昌综合	浙江频道	0p	0.44MB/s	余量4.2x	85ms	http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed
+邢台综合	河北频道	0p	0.77MB/s	余量6.3x	235ms	https://jwplay.hebyun.com.cn:443/live/xtsrmtzs/1500k/tzwj_video.m3u8
+邢台综合	河北频道	0p	0.45MB/s	余量3.7x	234ms	http://jwplay.hebyun.com.cn/live/xtsrmtzs/1500k/tzwj_video.m3u8
+邯郸公共	河北频道	0p	1.37MB/s	余量16.8x	183ms	https://jwcdnqx.hebyun.com.cn/live/hdgg/1500k/tzwj_video.m3u8
+邯郸新闻	河北频道	0p	2.08MB/s	余量20.5x	176ms	https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8
+邯郸科技教育	河北频道	0p	1.47MB/s	余量25.4x	225ms	https://jwcdnqx.hebyun.com.cn/live/hdkj/1500k/tzwj_video.m3u8
+邯郸科教	河北频道	0p	1.11MB/s	余量19.1x	151ms	https://jwcdnqx.hebyun.com.cn/live/hdkj/1500k/tzwj_video.m3u8
+重庆新闻	重庆频道	0p	0.34MB/s	余量2.3x	2987ms	http://38.75.136.137:98/gslb/dsdqpub/cqxw.m3u8?auth=testpub
+金川新闻综合	四川频道	0p	0.56MB/s	余量4.1x	120ms	http://139.203.180.9:90/live/zhxw.m3u8
+金川新闻综合	四川频道	0p	0.49MB/s	余量3.6x	141ms	http://live.jinchuanrmt.com:90/live/zhxw.m3u8?zsicd
+长白朝语	吉林频道	0p	0.54MB/s	余量5.3x	37ms	http://hplayer1.juyun.tv:80/camera/11344136.m3u8
+雅安新闻综合	四川频道	0p	1.21MB/s	余量5.0x	343ms	https://play.yunxya.com/channellive/xinwen.m3u8
+青田电视台	浙江频道	0p	0.53MB/s	余量3.0x	85ms	http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
+龙泉新闻综合	浙江频道	0p	0.58MB/s	余量3.2x	124ms	http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
+龙游新闻综合	浙江频道	0p	0.54MB/s	余量3.0x	102ms	http://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8?zzhed
