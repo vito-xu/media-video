@@ -85,10 +85,14 @@ FongMi 的 media3 是魔改版，以下私有 API 官方没有：
 
 ## 内置直播源（2026-11-19）
 
-- 频道表：`live/cn.m3u`（仓库根），58 个频道分三组（央视频道 27 / 卫视频道 4 / 地方频道 27），
-  来源 iptv-org `countries/cn.m3u`，逐个 6 秒探活后仅保留返回 `#EXTM3U` 的条目；
-  已剔除境外/宗教/政治敏感频道。CCTV-4/5/6 的公开源全部失效，未收录。
-- 打包：`app/build.gradle` 新增 `bundleLive` 任务（`live/` → `src/main/assets/live/`），挂到 `preBuild`。
+- 频道表：`live/cn.m3u`（仓库根），**265 个频道**，分 央视频道 32 / 卫视频道 34 / 各省地方台 / 体育 / 电影 / 少儿 / 剧场 等。
+- 生成方式：`tools/iptv_check.py`（纯标准库，无 Docker / 无 FFmpeg）
+  - 源池取 `cdn.jsdelivr.net/gh/Guovin/TV@gd/output/result.m3u`（1616 条接口）
+  - 并发 48 探活，只保留返回 `#EXTM3U` 的接口，解析 `RESOLUTION` 取分辨率
+  - 每频道保留最快 1 条进 m3u（m3u 内为单地址），前 4 条写入 `live/cn.bak.txt` 备用手工换源
+  - 排除境外宗教与政治敏感频道、港澳台未授权转播频道
+  - 用法：`python3 tools/iptv_check.py`（全量）、`--no-fetch`（用缓存池只重测）
+- 打包：`bundleLive` 任务（`live/` → `src/main/assets/live/`），挂到 `preBuild`。
 - 加载：`Config.create(1)` 默认 url = `assets://live/cn.m3u`；`Config.live()` 对老库中 url 为空的
   直播配置补该地址。`LiveParser.getText` 经 `UrlUtil.convert` 把 `assets://` 转成
   `http://127.0.0.1:9978/live/cn.m3u`，由 NanoHTTPD 的 assets 兜底路由提供。

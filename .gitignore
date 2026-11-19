@@ -22,3 +22,6 @@ app/src/main/assets/js/hd-dy.js
 app/src/main/assets/js/w2000.js
 app/src/main/assets/js/feiborui.js
 app/src/main/assets/live/
+
+# 直播源脚本缓存
+.cache/
