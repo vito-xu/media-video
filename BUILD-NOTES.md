@@ -85,20 +85,28 @@ FongMi 的 media3 是魔改版，以下私有 API 官方没有：
 
 ## 内置直播源（2026-11-19）
 
-- 频道表：`live/cn.m3u`（仓库根），**265 个频道**，分 央视频道 32 / 卫视频道 34 / 各省地方台 / 体育 / 电影 / 少儿 / 剧场 等。
+- 频道表：`live/cn.m3u`，**58 个频道**：央视频道 24（CCTV-1~17 全齐 + CCTV-5+ + CETV-1 +
+  世界地理/兵器科技/央视台球/女性时尚/风云剧场）、卫视频道 29、广东频道 5
+  （大湾区卫视/广东体育/广东民生/广东珠江/广州综合）。按要求只保留这三组，其余省级频道已剔除。
 - 生成方式：`tools/iptv_check.py`（纯标准库，无 Docker / 无 FFmpeg）
   - 源池取 `cdn.jsdelivr.net/gh/Guovin/TV@gd/output/result.m3u`（1616 条接口）
-  - 并发 48 探活，只保留返回 `#EXTM3U` 的接口，解析 `RESOLUTION` 取分辨率
-  - 每频道保留最快 1 条进 m3u（m3u 内为单地址），前 4 条写入 `live/cn.bak.txt` 备用手工换源
-  - 排除境外宗教与政治敏感频道、港澳台未授权转播频道
-  - 用法：`python3 tools/iptv_check.py`（全量）、`--no-fetch`（用缓存池只重测）
+  - **四层筛选，重点是真实拉流**：
+    L1 探活校验 `#EXTM3U` → L2 master 取最高档（最坏情况）→
+    L3 真实下载前 2 个分片（单片限 1.5MB/4s）→
+    L4 判定「吞吐 ≥0.3MB/s 且 缓冲余量 = 吞吐÷码率 ≥2.0」
+  - 只测首包会选到大量假活源（m3u8 能返回、分片 404），必须拉分片
+  - 用法：`python3 tools/iptv_check.py --groups 央视频道,卫视频道,广东频道`
+- 已知坑（改脚本前必读）：
+  1. 302 重定向后必须用**最终 URL** 解析相对分片路径，否则分片全 404
+  2. 请求不能走环境变量代理（`build_opener(ProxyHandler({}))`），否则吞吐失真
+  3. 深测并发 ≤12，过高会互相抢带宽造成误杀
 - 打包：`bundleLive` 任务（`live/` → `src/main/assets/live/`），挂到 `preBuild`。
 - 加载：`Config.create(1)` 默认 url = `assets://live/cn.m3u`；`Config.live()` 对老库中 url 为空的
   直播配置补该地址。`LiveParser.getText` 经 `UrlUtil.convert` 把 `assets://` 转成
   `http://127.0.0.1:9978/live/cn.m3u`，由 NanoHTTPD 的 assets 兜底路由提供。
 - 注意：**不要**在 `config.json` 里写 `lives` 数组——`VodConfig.initLive` 会用点播配置覆写 type=1
   的直播配置（url 变成点播 config），导致直播源失效。内置直播走独立的 type=1 配置。
-- 实测：CCTV-1 / CCTV-13 / 哈尔滨新闻综合 均 `RENDERING_START`，中文频道名、分组、台标正常。
+- 实测：CCTV-1 综合、203（旧全量版）、大湾区卫视 均正常出画面。
 
 ## 产物与原版官方 APK 的差异
 

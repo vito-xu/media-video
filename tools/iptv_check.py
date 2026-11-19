@@ -201,6 +201,7 @@ def main():
     ap.add_argument("--workers", type=int, default=36)
     ap.add_argument("--deep-workers", type=int, default=12)
     ap.add_argument("--topn", type=int, default=4)
+    ap.add_argument("--groups", default="", help="只保留这些分组，逗号分隔，如 央视频道,卫视频道,广东频道")
     args = ap.parse_args()
 
     chans, order = load_pool(args.pool, refresh=not args.no_fetch)
@@ -249,6 +250,9 @@ def main():
             final[n].sort(key=lambda x: (-x["margin"], -x["mbps"]))
 
     picked = [(group_rank(chans[n]["group"]), n, chans[n], v) for n, v in final.items() if v]
+    if args.groups:
+        keep = {g.strip() for g in args.groups.split(",") if g.strip()}
+        picked = [p for p in picked if p[2]["group"] in keep]
     picked.sort(key=lambda x: (x[0], x[1]))
 
     out = ["#EXTM3U"]
