@@ -83,30 +83,40 @@ FongMi 的 media3 是魔改版，以下私有 API 官方没有：
 | `ui/dialog/SubtitleDialog.java` | `addPosition/subPosition/getPosition/addTextSize/subTextSize/getTextSize/setUserDefaultTextSize` | 改用 `Setting` 存值 + 官方 `setBottomPaddingFraction`/`setFractionalTextSize` |
 | `player/exo/TrackNameProvider.java` | `MimeTypes.AUDIO_AV3A` / `VIDEO_ProRes` / `APPLICATION_OCTET` | 字符串字面量 `"audio/av3a"` / `"video/x-prores"` / `"application/octet-stream"` |
 
-## 内置直播源（2026-11-19）
+## 内置直播源（2026-11-21 改为混合方案）
 
-- 频道表：`live/cn.m3u`，**58 个频道**：央视频道 24（CCTV-1~17 全齐 + CCTV-5+ + CETV-1 +
-  世界地理/兵器科技/央视台球/女性时尚/风云剧场）、卫视频道 29、广东频道 5
-  （大湾区卫视/广东体育/广东民生/广东珠江/广州综合）。按要求只保留这三组，其余省级频道已剔除。
-- 生成方式：`tools/iptv_check.py`（纯标准库，无 Docker / 无 FFmpeg）
-  - 源池取 `cdn.jsdelivr.net/gh/Guovin/TV@gd/output/result.m3u`（1616 条接口）
-  - **四层筛选，重点是真实拉流**：
-    L1 探活校验 `#EXTM3U` → L2 master 取最高档（最坏情况）→
-    L3 真实下载前 2 个分片（单片限 1.5MB/4s）→
-    L4 判定「吞吐 ≥0.3MB/s 且 缓冲余量 = 吞吐÷码率 ≥2.0」
-  - 只测首包会选到大量假活源（m3u8 能返回、分片 404），必须拉分片
-  - 用法：`python3 tools/iptv_check.py --groups 央视频道,卫视频道,广东频道`
-- 已知坑（改脚本前必读）：
-  1. 302 重定向后必须用**最终 URL** 解析相对分片路径，否则分片全 404
-  2. 请求不能走环境变量代理（`build_opener(ProxyHandler({}))`），否则吞吐失真
-  3. 深测并发 ≤12，过高会互相抢带宽造成误杀
-- 打包：`bundleLive` 任务（`live/` → `src/main/assets/live/`），挂到 `preBuild`。
-- 加载：`Config.create(1)` 默认 url = `assets://live/cn.m3u`；`Config.live()` 对老库中 url 为空的
-  直播配置补该地址。`LiveParser.getText` 经 `UrlUtil.convert` 把 `assets://` 转成
-  `http://127.0.0.1:9978/live/cn.m3u`，由 NanoHTTPD 的 assets 兜底路由提供。
-- 注意：**不要**在 `config.json` 里写 `lives` 数组——`VodConfig.initLive` 会用点播配置覆写 type=1
-  的直播配置（url 变成点播 config），导致直播源失效。内置直播走独立的 type=1 配置。
-- 实测：CCTV-1 综合、203（旧全量版）、大湾区卫视 均正常出画面。
+`live/cn.m3u` 共 **69 台**，三组：
+
+| 分组 | 台数 | 来源 | 依赖 |
+|---|---|---|---|
+| 央视频道 | 30 | 本机 ysp-live（央视频官方 CDN，10M 码率 + 7 天回看） | **需本机 8767 服务在线** |
+| 卫视频道 | 34 | 同上 | 同上 |
+| 广东频道 | 5 | 公开静态源（38.75.136.137 / gztv） | 无 |
+
+生成方式：`python3 tools/merge_ysp.py`
+
+- 自动探测本机局域网 IP，拉 `http://<IP>:8767/all.m3u`，再并入广东 5 台
+- **流地址写死成 `http://<局域网IP>:8767/xxx.m3u8`**：换网络/换 IP 必须重跑脚本并重新打包
+- ysp-live 未启动时脚本直接报错退出（不会生成半残的 m3u）
+
+### ysp-live 启动方法（无需 Docker）
+```bash
+# 源码约 190KB，纯标准库
+curl -o ysp-live.py https://ghproxy.net/raw.githubusercontent.com/evanzme/ysp-live/main/ysp-live.py
+env -u HTTP_PROXY -u HTTPS_PROXY python3 ysp-live.py 8767 --data-dir ./data --no-engine
+```
+`--no-engine` 跳过 Node WASM 兜底引擎。注意不要用 `curl -C -` 续传，会把源码和 Cloudflare 页面混在一起。
+
+### 实测结论（重要）
+- CCTV-1 等能直接拿到**高码率设备协议直链**（`tlivecloud-playback-cdn.ysp.cctv.cn`），平板直连，画质明显好于公开源
+- 未升级到高码率的台会走 `http://<IP>:8767/proxy.ts` **由本机转发**，本机到 `cctv.cn` 只有 25-143KB/s，会卡（表现为错误码 2004）
+- 央视频有风控：切台过快返回「您的操作过于频繁，请稍后再试」，需停留 10s+ 等待升级
+- 因此：本机中转的 1080p 流不可用，只有升到高码率直链才流畅；NAS/软路由（家宽直连 + 24h 在线）才是这套的正常运行环境
+
+### 旧的纯静态方案（已被替换，保留说明）
+`tools/iptv_check.py --groups 央视频道,卫视频道,广东频道` 可从公开源池现测 58 台，
+四层筛选（探活 → 解析最高档 → 真实拉 2 个分片 → 吞吐≥0.3MB/s 且余量≥2.0），
+不依赖本机服务，但画质只有 720p 级别。需要"不依赖电脑"时可切回。
 
 ## 产物与原版官方 APK 的差异
 
