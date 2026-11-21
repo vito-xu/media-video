@@ -79,6 +79,9 @@ def main():
     ap.add_argument("--ip", default="", help="本机局域网 IP，默认自动探测")
     ap.add_argument("--port", type=int, default=8767)
     ap.add_argument("--out", default=os.path.join(ROOT, "live", "cn.m3u"))
+    ap.add_argument("--fallback", default=os.path.join(ROOT, "live", "cn.static.m3u"),
+                    help="静态备用源 m3u（同频道会追加为第 2 条线路，ysp 挂掉可手动切换）")
+    ap.add_argument("--no-fallback", action="store_true", help="不追加静态备用源")
     ap.add_argument("--check", action="store_true", help="只检查服务，不写文件")
     args = ap.parse_args()
 
@@ -103,6 +106,31 @@ def main():
         items.append({"meta": meta, "name": n.strip(), "group": group, "url": u.strip()})
 
     ysp_n = len(items)
+
+    # 追加静态备用源：同名/CCTV 同号 视为同一频道，排在其后作为第 2 条线路
+    if not args.no_fallback and os.path.exists(args.fallback):
+        fb_text = open(args.fallback, encoding="utf-8").read()
+        fb = []
+        for m, n, u in re.findall(r"#EXTINF:-1 ([^\n]*),([^\n]+)\n(https?://[^\s]+)", fb_text):
+            g = (re.search(r'group-title="([^"]*)"', m) or [None, ""])[1]
+            fb.append({"name": n.strip(), "group": GROUP_MAP.get(g, g), "url": u.strip()})
+
+        def key(name):
+            m = re.match(r"(CCTV-\d+|CCTV-5\+|CCTV-4K|CCTV-8K)", name)
+            return m.group(1) if m else name
+
+        fb_map = {}
+        for item in fb:
+            fb_map.setdefault(key(item["name"]), []).append(item)
+
+        added = 0
+        for item in items:
+            for cand in fb_map.get(key(item["name"]), [])[:2]:
+                if cand["url"] not in [x["url"] for x in items if x["name"] == item["name"]]:
+                    items.append({"meta": item["meta"], "name": item["name"],
+                                  "group": item["group"], "url": cand["url"], "alt": True})
+                    added += 1
+        print(f"· 追加静态备用线路 {added} 条")
     for name, url in GUANGDONG:
         items.append({
             "meta": f'tvg-name="{name}" group-title="广东频道"',
@@ -111,7 +139,7 @@ def main():
 
     items.sort(key=lambda i: (GROUP_ORDER.index(i["group"]) if i["group"] in GROUP_ORDER else 9,
                               cctv_no(i["name"]) if i["group"] == "央视频道" else 0,
-                              i["name"]))
+                              i["name"], i.get("alt", False)))
 
     from collections import Counter
     cnt = Counter(i["group"] for i in items)
